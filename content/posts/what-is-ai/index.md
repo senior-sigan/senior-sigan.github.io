@@ -3,7 +3,7 @@ title: "Что такое искусственный интеллект"
 subtitle: "Или Машинное обучение как метод создания искусственного интеллекта"
 date: 2017-07-01T12:00:00+06:00
 draft: false
-tags: ["machine learning", "philosophy"]
+tags: ["machine learning", "philosophy", "ai"]
 featured: false
 summary: ""
 series: ""

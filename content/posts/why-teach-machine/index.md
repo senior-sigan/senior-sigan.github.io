@@ -2,7 +2,7 @@
 title: "Зачем учить машины?"
 date: 2017-06-30T12:00:00+06:00
 draft: false
-tags: ["machine learning", "philosophy"]
+tags: ["machine learning", "philosophy", "ai"]
 featured: false
 summary: ""
 series: ""

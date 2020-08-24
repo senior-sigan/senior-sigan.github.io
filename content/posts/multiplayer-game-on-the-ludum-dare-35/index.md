@@ -5,7 +5,7 @@ draft: false
 tags: ["gamedev"]
 featured: false
 summary: ""
-series: ""
+series: ["projects"]
 ---
 
 That's our 9th Ludum Dare, so we decided to make something challenging this time. We've tried to create multiplayer action-horror-shooter thingy with two characters trying to kill each other. One is a werewolf (short-range attack, wide angle of view), another one is a hunter (long-range attack, small view angle and viewing distance). And yeah, that was pretty challenging indeed for some reasons.
