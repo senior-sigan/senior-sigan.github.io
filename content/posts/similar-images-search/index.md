@@ -2,7 +2,7 @@
 title: "Similar Images Search"
 date: 2018-01-23T12:00:00+06:00
 draft: false
-tags: ["neural networks", "image search", "knn"]
+tags: ["neural networks", "image search", "knn", "machine learning"]
 featured: true
 summary: ""
 series: ""
