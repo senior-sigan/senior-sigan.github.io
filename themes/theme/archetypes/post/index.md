@@ -2,5 +2,9 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
+tags: []
+featured: false
+summary: ""
+series: ""
 ---
 
