@@ -155,7 +155,10 @@ filenames = load_images_filenames()
 vec = load_target_image()
 
 dist, indices = knn.kneighbors(vec, n_neighbors=10)
-similar_images = [(filenames[indices[i]], dist[i]) for i in range(len(indices))]
+similar_images = [
+    (filenames[indices[i]], dist[i]) 
+    for i in range(len(indices))
+]
 ```
 
 В `similar_images` у нас будет лежать массив из 10 пар: имя файла и значение похожести по метрике, которая чем меньше, тем более похожее изображение к целевому. Всё, теперь этот список можно отдавать на фронтенд и рисовать красивую галерею. Изменяя параметр `n_neighbours` можно менять количество возвращаемых соседей, которые упорядочены по увеличению метрики, то есть дальше будут более непохожие картинки.

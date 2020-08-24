@@ -3,6 +3,11 @@ languageCode = "ru-RU"
 title = "Ilya Siganov"
 theme = "theme"
 
+defaultContentLanguage = "ru"
+hasCJKLanguage = false
+enableEmoji = true
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
 [taxonomies]
 tag = "tags"
 series = "series"
@@ -28,7 +33,14 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
-defaultContentLanguage = "ru"
-hasCJKLanguage = false
-enableEmoji = true
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "paraiso-dark"
+    tabWidth = 4
