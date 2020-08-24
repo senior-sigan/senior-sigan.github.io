@@ -5,6 +5,7 @@ theme = "theme"
 
 [taxonomies]
 tag = "tags"
+series = "series"
 
 # Nav.
 [[menu.main]]

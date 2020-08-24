@@ -1,0 +1,69 @@
+---
+title: "Imagemagick Experiments 1"
+date: 2013-04-01T21:48:00+06:00
+draft: false
+tags: []
+featured: false
+summary: ""
+series: ["Эксперименты с картинками"]
+canonical_url: "https://vk.com/wall38057738_892"
+---
+
+Фуууф, ребята. Опоздал к пятнице сделать, так хоть 1 апреля выложу. На днях мне пришла странная идея-умножать картинки. Ну как матрицы, вы в курсе. Так вот, пришлось сегодня вечерком быстренько поверхностно изучить библиотеку ImageMagick для Си и написать на коленке прогу без очистки памяти и прочего.
+
+## Меняем местами
+
+Итак. Начинаем с простого - поменять RGB местами, например BRG или еще как. Оказывается это очень клево выглядит(да, такое в фотошопе наверное 10 лет назад есть).
+Берём Марселину
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/c1cv9n3srwxx7kr1r6nm.jpg)
+
+Получили синенькую Марселину. Няяяя
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/4gio3ung8j96d4wg9xui.jpg)
+
+Клевая тачка желтого цвета. Надо перекрасить.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/6kcmzkfuyndwy4o997fx.jpg)
+
+Получилось круче, чем было.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/q0426ldnmz5d609cndga.jpg)
+
+## XOR
+
+Далее. По просьбам друзей впилил XOR. Но это совсем не интересно, результат вполне ожидаем.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/zhla5l9d0jkblq3xvdbf.jpg)
+
+Применяем XOR со второй картинкой.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/izwpqkylp48v7gxcjq83.jpg)
+
+Получаем после XOR.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/svw576nz25jfn00ors49.jpg)
+
+Очевидно это просто наложение картинок. Ну так немного вещественно.
+
+## Вычитание
+
+Подумал я после XOR — А что если вычитать цвета? Получилось еще вещественнее.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/wcqhllaxij6piwi1dh5i.jpg)
+
+## Умножение
+
+И таки да. быстро написав построчечное умножение матриц, умножил картинку саму на себя. Ожидания оправдались. ПОЛУЧИЛОСЬ ШЕДЕВРАЛЬНО.
+
+Берём квадратную картинку, для простоты. И умножаем на саму себя.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/epqlanhlsug9eezb91d0.jpg)
+
+Результат умножения картинки саму на себя. Черт возьми, да это же офигенно. Я давно не видел такой игры цвета и формы. Как изящно верх картинки косплеет под баркод. Ах.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/sfnfj9pu5jpyt60r808s.jpg)
+
+## Исходники
+
+https://gist.github.com/senior-sigan/5285689
