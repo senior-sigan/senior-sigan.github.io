@@ -8,6 +8,8 @@ hasCJKLanguage = false
 enableEmoji = true
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+googleAnalytics = "UA-113025618-1"
+
 [taxonomies]
 tag = "tags"
 series = "series"
