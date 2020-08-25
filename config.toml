@@ -12,6 +12,11 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 tag = "tags"
 series = "series"
 
+[params]
+author = "Ilya Siganov"
+email = "ilya.blan4@gmail.com"
+tg_channel = "@senior_sigan_blog"
+
 # Nav.
 [[menu.main]]
 name = "Home"

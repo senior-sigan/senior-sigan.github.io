@@ -19,6 +19,21 @@ a {
     color: #0077aa;
 }
 
+.article-header address {
+    font-size: 16px;
+    font-style: normal;
+    color: #666;
+}
+
+.article-header address a {
+    color: #666;
+}
+
+.article-header address time::before {
+    content: '\2022';
+    padding: 0 7px;
+}
+
 /* header and footer areas */
 .menu {
     padding: 0;
@@ -28,7 +43,7 @@ a {
     display: inline-block;
 }
 
-.article-meta,
+.article-header,
 .menu a {
     text-decoration: none;
     background: #eee;
@@ -37,13 +52,9 @@ a {
 }
 
 .menu,
-.article-meta,
+.article-header,
 footer {
     text-align: center;
-}
-
-.title {
-    font-size: 1.1em;
 }
 
 footer a {
