@@ -16,33 +16,33 @@ canonical_url: "https://vk.com/wall38057738_892"
 Итак. Начинаем с простого - поменять RGB местами, например BRG или еще как. Оказывается это очень клево выглядит(да, такое в фотошопе наверное 10 лет назад есть).
 Берём Марселину
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/c1cv9n3srwxx7kr1r6nm.jpg)
+![Исходное изображение](https://dev-to-uploads.s3.amazonaws.com/i/c1cv9n3srwxx7kr1r6nm.jpg)
 
 Получили синенькую Марселину. Няяяя
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/4gio3ung8j96d4wg9xui.jpg)
+![Трансформированное изображение](https://dev-to-uploads.s3.amazonaws.com/i/4gio3ung8j96d4wg9xui.jpg)
 
 Клевая тачка желтого цвета. Надо перекрасить.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/6kcmzkfuyndwy4o997fx.jpg)
+![Исходное изображение](https://dev-to-uploads.s3.amazonaws.com/i/6kcmzkfuyndwy4o997fx.jpg)
 
 Получилось круче, чем было.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/q0426ldnmz5d609cndga.jpg)
+![Трансформированное изображение](https://dev-to-uploads.s3.amazonaws.com/i/q0426ldnmz5d609cndga.jpg)
 
 ## XOR
 
 Далее. По просьбам друзей впилил XOR. Но это совсем не интересно, результат вполне ожидаем.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/zhla5l9d0jkblq3xvdbf.jpg)
+![Изображение A](https://dev-to-uploads.s3.amazonaws.com/i/zhla5l9d0jkblq3xvdbf.jpg)
 
 Применяем XOR со второй картинкой.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/izwpqkylp48v7gxcjq83.jpg)
+![Изображение B](https://dev-to-uploads.s3.amazonaws.com/i/izwpqkylp48v7gxcjq83.jpg)
 
 Получаем после XOR.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/svw576nz25jfn00ors49.jpg)
+![A xor B](https://dev-to-uploads.s3.amazonaws.com/i/svw576nz25jfn00ors49.jpg)
 
 Очевидно это просто наложение картинок. Ну так немного вещественно.
 
@@ -50,7 +50,7 @@ canonical_url: "https://vk.com/wall38057738_892"
 
 Подумал я после XOR — А что если вычитать цвета? Получилось еще вещественнее.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/wcqhllaxij6piwi1dh5i.jpg)
+![A - B](https://dev-to-uploads.s3.amazonaws.com/i/wcqhllaxij6piwi1dh5i.jpg)
 
 ## Умножение
 
@@ -58,11 +58,11 @@ canonical_url: "https://vk.com/wall38057738_892"
 
 Берём квадратную картинку, для простоты. И умножаем на саму себя.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/epqlanhlsug9eezb91d0.jpg)
+![Исходное изображение](https://dev-to-uploads.s3.amazonaws.com/i/epqlanhlsug9eezb91d0.jpg)
 
 Результат умножения картинки саму на себя. Черт возьми, да это же офигенно. Я давно не видел такой игры цвета и формы. Как изящно верх картинки косплеет под баркод. Ах.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/sfnfj9pu5jpyt60r808s.jpg)
+![Умноженное матрично изображение на себя](https://dev-to-uploads.s3.amazonaws.com/i/sfnfj9pu5jpyt60r808s.jpg)
 
 ## Исходники
 
