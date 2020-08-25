@@ -1,9 +1,22 @@
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
 body {
     max-width: 800px;
     margin: auto;
     padding: 1em;
     line-height: 1.5em;
-    font-family: Optima, Candara, Calibri, Arial, sans-serif;
+    font-family: "system";
+    color: rgb(41, 41, 41);
+    font-size: 18px;
+}
+
+a {
+    color: #0077aa;
 }
 
 /* header and footer areas */
@@ -96,4 +109,18 @@ thead,
 tfoot,
 tr:nth-child(even) {
     background: #eee;
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+figure {
+    margin: 0;
+}
+
+figure p {
+    margin-block-start: 6px;
 }
