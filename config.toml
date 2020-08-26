@@ -9,6 +9,7 @@ enableEmoji = true
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 googleAnalytics = "UA-113025618-1"
+enableRobotsTXT = true
 
 [taxonomies]
 tag = "tags"
@@ -21,6 +22,11 @@ email = "ilya.blan4@gmail.com"
 tg_channel = "@senior_sigan_blog"
 yandexWebMasterKey = "beb726920cbc64c2"
 yandexMetrika = "34801205"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 # Nav.
 [[menu.main]]
