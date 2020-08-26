@@ -15,28 +15,28 @@ canonical_url: "https://vk.com/wall38057738_909"
 
 Начнем с сортировки красного канала. Напомню, что машина желтая. Выглядит как закат. Ну почти.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/rpolbjcin7dc9r9y4d8h.jpeg" caption="Сортировка по яркости красного канала">}}
+{{< figure src="images/rpolbjcin7dc9r9y4d8h.jpeg" caption="Сортировка по яркости красного канала">}}
 
 А теперь отправим синий канал в другую сторону.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/o1xdysi0xya3ivboyzp3.jpeg" caption="Красный канал сортируется в правую сторону, синий — в левую">}}
+{{< figure src="images/o1xdysi0xya3ivboyzp3.jpeg" caption="Красный канал сортируется в правую сторону, синий — в левую">}}
 
 Картинка всё еще похожа на оригинал. НУЖНО ИСПРАВИТЬ ЭТОТ НЕДОЧЕТ.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/b99trvo3ja0t70gtlfdh.jpeg)
+![Alt Text](images/b99trvo3ja0t70gtlfdh.jpeg)
 
 Вот это я понимаю искусство. Полная сортировка всех каналов в левую сторону. Поздравляю. Так бы выглядела машина на десятой скорости света.
 Мне так понравился эффект растаскивания цветов в разные стороны, что сделал еще несколько экземпляров.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/41dq0cfm885rqwsr77go.jpeg)
+![Alt Text](images/41dq0cfm885rqwsr77go.jpeg)
 
 Хорошо, а вот еще одна подопытная няша. Отсортируем её полностью.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/tfnxhtxyixm80m8rac49.jpeg)
+![Alt Text](images/tfnxhtxyixm80m8rac49.jpeg)
 
 УПС. это не то чего я ожидал. Тьфу ты, перепутал сортировку. Часть каналов отсортирована полностью другая часть — нет. Короче я не понял, что тут произошло. Наверное баг в проге.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/v9pbx8b8cns2wgps66q0.jpeg)
+![Alt Text](images/v9pbx8b8cns2wgps66q0.jpeg)
 
 Вот это другое дело. Полностью отсортированная картинка. Назовем её розовый градиент [s]Малевича[/s].
 Это всё. В следующем выпуске я покажу как один пиксель может “сломать” всю картинку.

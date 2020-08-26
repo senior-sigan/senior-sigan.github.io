@@ -15,35 +15,35 @@ canonical_url: "https://vk.com/wall38057738_925"
 
 Значение канала * (x/y). Только вот незадача. Я не перевёл во float, поэтому видны резкие границы разделения.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/gn61wklfmmftg3ep5atf.jpeg" caption="(int)(x/y)" >}}
+{{< figure src="images/gn61wklfmmftg3ep5atf.jpeg" caption="(int)(x/y)" >}}
 
 Теперь плавное использвание x/y.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/c342x0p7a7z3kc62s79p.jpeg" caption="(float)(x/y)">}}
+{{< figure src="images/c342x0p7a7z3kc62s79p.jpeg" caption="(float)(x/y)">}}
 
 ## Логарифм
 
 Логарифм произведения координат. По-моему это самый прикольный результат.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/n6v3rsl1vvo00ji4oqf9.jpeg" caption="log(x*y)" >}}
+{{< figure src="images/n6v3rsl1vvo00ji4oqf9.jpeg" caption="log(x*y)" >}}
 
 А что если взять log(x/y)?
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/3gfyi9wnv7z6dwhif365.jpeg" caption="log(x/y)" >}}
+{{< figure src="images/3gfyi9wnv7z6dwhif365.jpeg" caption="log(x/y)" >}}
 
 Ещё один экземпляр. (прим. времени — через 2 года уже не могу вспомнить, что тут за функция. Имя файла xyyx.)
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/0ndg0khoqxeudglswu9j.jpeg" caption="xyyx" >}}
+{{< figure src="images/0ndg0khoqxeudglswu9j.jpeg" caption="xyyx" >}}
 
 ## Sin
 
 Quant*sin(x*y). Советую открыть оригинал и приблизить. Зрелище ооооочень странное.
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/wjjzi8e8uo52qqic5yco.jpeg" caption="Quant*sin(x*y)" >}}
+{{< figure src="images/wjjzi8e8uo52qqic5yco.jpeg" caption="Quant*sin(x*y)" >}}
 
 Тоже синус, но с более слабыми коэффициентами.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/dv0ospy750vqf5vs8stp.jpeg)
+![Alt Text](images/dv0ospy750vqf5vs8stp.jpeg)
 
 В следующей серии я покажу что будет если не менять цвет пикселей, а менять их местами.
 

@@ -17,15 +17,15 @@ canonical_url: "https://vk.com/wall38057738_903"
 И самое интересное. Я решил расставить все штрихи в кси( ξ). Сравниваем, что лучше аниме или обычное жалкое тридэ.
 Берём странную картинку кубиков.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/0jgo1gfzdlv8x9xtex6v.jpeg)
+![Alt Text](images/0jgo1gfzdlv8x9xtex6v.jpeg)
 
 И милую картинку танцующих фигурок оригами.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/2vy54l3snollrp0vjel4.jpeg)
+![Alt Text](images/2vy54l3snollrp0vjel4.jpeg)
 
 Получаем такое чудо.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/xcnw4h2fhe6lwih37873.jpeg)
+![Alt Text](images/xcnw4h2fhe6lwih37873.jpeg)
 
 Действительно очень красиво вышло. Это не просто какой-то xor или вычитание. А нежное сочетание цветов.
 
@@ -33,15 +33,15 @@ canonical_url: "https://vk.com/wall38057738_903"
 
 Берём тридэ девушку, которая косплеит индианку.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/5xutv662nvuyqaca782r.jpeg)
+![Alt Text](images/5xutv662nvuyqaca782r.jpeg)
 
 И анимешную няшу.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/156acf6d26v0yyxt9cs7.jpeg)
+![Alt Text](images/156acf6d26v0yyxt9cs7.jpeg)
 
 В итоге получаем. Аниме побеждает с огромным отрывом. Ура!!
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/k87r0mfbdhaxxmoeg16m.jpeg)
+![Alt Text](images/k87r0mfbdhaxxmoeg16m.jpeg)
 
 ## Исходники
 

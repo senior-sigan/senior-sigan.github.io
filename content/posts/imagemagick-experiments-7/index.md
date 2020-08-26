@@ -15,18 +15,18 @@ canonical_url: "https://vk.com/wall38057738_936"
 
 Каждую нечетную строку инвертируем-ну тут совсем скучно, разве что это не обычное зеркальное наложение. Рассмотрите в оригинале, очень интересный эффект с вертикальными полосами.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ccvtxi3ffocfl2pohwx5.jpeg)
+![Alt Text](images/ccvtxi3ffocfl2pohwx5.jpeg)
 
 ## Смещение
 
 Смещение с коэффициентом. А тут весело, получается какое-то там размазывание, не помню как это называется в фотошопе.
 В след раз попытаюсь осилить и сделаю метро интерфейс из картинки ;)
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/5c1n02llufnre9puls8d.jpeg" caption="Смещение с коэффициентом 10">}}
+{{< figure src="images/5c1n02llufnre9puls8d.jpeg" caption="Смещение с коэффициентом 10">}}
 
 Моя любимая машинка размазалась полностью. Грусть-тоска T_T
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/mr1ez8uhj9gx3hlocz2w.jpeg" caption="Смещение с коэффициентом 1000">}}
+{{< figure src="images/mr1ez8uhj9gx3hlocz2w.jpeg" caption="Смещение с коэффициентом 1000">}}
 
 В следующей части разбиение картинки на квадраты произвольного цвета и размера.
 

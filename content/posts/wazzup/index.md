@@ -32,9 +32,7 @@ series: ""
 
 ## Эксплуатируем уязвимость!
 
-Сценарий:
-
-![Image for post](https://miro.medium.com/max/470/1*mrpcrOON2mZZK_ZqqPcjAw.png)
+![Сценарий](images/1_mrpcrOON2mZZK_ZqqPcjAw.png)
 
 1. Жертва заходит на фишинговый сайт, как две капли воды похожий на оригинальный [WhatsApp](https://web.whatsapp.com/).
 2. Жертва видит знакомый ей QR-код и приглашение сканировать его приложением, что она и делает.
@@ -45,7 +43,7 @@ series: ""
 1. [Selenium Web driver](http://www.seleniumhq.org/), нужный для получения QR-кода из WhatsApp.
 2. [Простенький сервер,](https://github.com/blan4/Wazzup) который будет запускать селениум и передавать полученный код на фишинговую страницу.
 
-![Image for post](https://miro.medium.com/max/1171/1*RzGToCt2Y_LlLAifwnf7-g.png)
+![Пруф концепта на скриншотах](images/1_RzGToCt2Y_LlLAifwnf7-g.png)
 
 Жертва заходит на [http://localhost:4567](http://localhost:4567/) — это сайт злоумышленника. В этот момент запускается selenium и открывает сессию с [https://web.whatsapp.com](https://web.whatsapp.com/). Специальный скрипт ищет на странице QR-code и отправляет его жертве.
 

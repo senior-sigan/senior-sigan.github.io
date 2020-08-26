@@ -16,24 +16,24 @@ canonical_url: "https://vk.com/wall38057738_954"
 
 Существует 2 вида подматриц- синие зеленые и красны. Размер выбирается как случайное число.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/daegq1c3dbdvhgupp8y3.jpeg)
+![Alt Text](images/daegq1c3dbdvhgupp8y3.jpeg)
 
 А здесь размер выбирается как половина от ширины матрицы. Очевидно прогрессия {{< katex >}}\frac{1}{2})^n{{< /katex >}}. Ну или почти такая. Не суть.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/g3il2xvxdvl1hbqfntk9.jpeg)
+![Alt Text](images/g3il2xvxdvl1hbqfntk9.jpeg)
 
 Теперь случайное перемешивание в подматрицах. Обычный рандом дает не очень клевый результат.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/pdr32slb9rdg286vfi8u.jpeg)
+![Alt Text](images/pdr32slb9rdg286vfi8u.jpeg)
 
 Тут волей случая первая подматрица оказалась очень большой. FIX IT!!!!
 Вот то-то же. Нам нужен был true_random. Здесь выбирается средний размер квадратов с некоторой дельтой. Вот так красить машины надо. Это я понимаю искусство.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/0o59xkji5ryopzodz2t1.jpeg)
+![Alt Text](images/0o59xkji5ryopzodz2t1.jpeg)
 
 Теперь перекрасим няшку.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/r06gl4lyb2iufc2ltwur.jpeg)
+![Alt Text](images/r06gl4lyb2iufc2ltwur.jpeg)
 
 > Тебя теперь интел засудит, у них вся реклама в таком стиле)
 
@@ -41,7 +41,7 @@ canonical_url: "https://vk.com/wall38057738_954"
 
 Нет времени объяснять, прямоугольники захватывают мир……………
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/swc95wnehq27ectw3t0c.jpeg)
+![Alt Text](images/swc95wnehq27ectw3t0c.jpeg)
 
 От сложения няшек, няшность не возросла T_T.
 

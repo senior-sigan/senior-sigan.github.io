@@ -13,7 +13,7 @@ series: ""
 У нас уже есть [ML](https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5), [AR](https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C), [VR](https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C) и другие новые [модные технологии](https://en.wikipedia.org/wiki/Emerging_technologies). Если с последними двумя ясно что делать в играх, то что можно делать с ML? Там всякое компьютерное зрение, генерация контента, предсказание чего-нибудь. Где же новые игры, что используют ML?
 Я предлагаю пофантазировать и придумать либо новые жанры игр, либо новые способы управления.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/3lgbyd7zs7xc9p7jl76u.png)
+![ ](images/3lgbyd7zs7xc9p7jl76u.png)
 
 ## Новое управление
 
@@ -21,11 +21,11 @@ series: ""
 
 ## Управление мимикой лица
 
-{{< figure src="https://dev-to-uploads.s3.amazonaws.com/i/mitr6sbjctaqwxtdncvv.png" caption="Apple анонсировали emoji, повторяющие мимику человека" >}}
+{{< figure src="images/mitr6sbjctaqwxtdncvv.png" caption="Apple анонсировали emoji, повторяющие мимику человека" >}}
 
 Начнём с простого. Можно сделать обычный Dance revolution для мимики. Представьте, падает то emoji улыбающейся какахи, что в слайде у Apple, и вам нужно успеть тоже улыбнуться. Конечно, если посмотреть на emoji, то возникает вопрос — “А что человек реально такое может изобразить?”. Уморительно же.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/bwpkocrg67fuohnsgace.jpeg)
+![ ](images/bwpkocrg67fuohnsgace.jpeg)
 
 А еще если это всё делать на вечеринках и снимать видео как кто-то играет, то получится очень смешно и всем будет что вспомнить. Можно будет устроить соревнование, кто быстрее может менять мимику, точнее чью мимику компьютер лучше распознаёт.
 

@@ -12,11 +12,11 @@ canonical_url: "https://vk.com/wall38057738_966"
 Продолжаем поиск чего-то необычного и вещественного.
 В предыдущем посте я сделал “квадратное сложение” няшек. Настал час истины. Совершим же перекрёстное слияние няшек. И тут размер итогового изображения в два раза больше исходного. Для усиления умиления рекомендую смотреть как оригинал, а не превьюху!!!!
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/jvkjivomg6u8ozqmytsl.jpg)
+![Alt Text](images/jvkjivomg6u8ozqmytsl.jpg)
 
 Дополнительный бонус. Идеальное вмешивание картинок.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/flaj21d7bzk30zgt1s7i.jpeg)
+![Alt Text](images/flaj21d7bzk30zgt1s7i.jpeg)
 
 ## Исходники
 
