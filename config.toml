@@ -22,6 +22,7 @@ email = "ilya.blan4@gmail.com"
 tg_channel = "@senior_sigan_blog"
 yandexWebMasterKey = "beb726920cbc64c2"
 yandexMetrika = "34801205"
+telegramDiscussSiteID = "TsEJ47sj"
 
 [sitemap]
   changefreq = "monthly"
