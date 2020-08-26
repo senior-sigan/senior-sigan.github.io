@@ -1,5 +1,5 @@
 baseURL = "https://blog.senior-sigan.net/"
-languageCode = "ru-RU"
+languageCode = "ru"
 title = "Ilya Siganov"
 theme = "theme"
 
@@ -10,6 +10,12 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 googleAnalytics = "UA-113025618-1"
 enableRobotsTXT = true
+
+[permalinks]
+post = "/post/:year/:month/:day/:slug/"
+
+[author]
+name = "Ilya Siganov"
 
 [taxonomies]
 tag = "tags"
