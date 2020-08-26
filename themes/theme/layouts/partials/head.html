@@ -21,7 +21,7 @@
     <script src="{{ "/js/main.js" | relURL }}"></script>
 
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-    <meta name="yandex-verification" content="{{ .Site.Params.YandexWebMasterKey }}" />
     {{ template "_internal/google_analytics_async.html" . }}
+    {{ partial "yandex_metrika.html" }}
     {{ end }}
 </head>
