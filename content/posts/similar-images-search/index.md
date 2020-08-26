@@ -1,10 +1,10 @@
 ---
-title: "Similar Images Search"
+title: "Поиск похожего изображения"
 date: 2018-01-23T12:00:00+06:00
 draft: false
 tags: ["neural networks", "image search", "knn", "machine learning"]
 featured: true
-summary: ""
+summary: "Еще каких-то 5 лет назад, чтобы сделать свой поиск по картинкам, приходилось погружаться в тонкости машинного зрения. Сейчас для этих целей есть нейросети!"
 series: ""
 ---
 
