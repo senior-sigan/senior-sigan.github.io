@@ -11,7 +11,7 @@
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(int("{{ . }}"), "init", {
+    ym("{{ . }}" * 1, "init", {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true
@@ -27,4 +27,10 @@
 
 {{ with site.Params.YandexWebMasterKey }}
 <meta name="yandex-verification" content="{{ . }}" />
+{{ end }}
+
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{ with site.Params.googleVerificationId }}
+<meta name="google-site-verification" content="{{ . }}" />
 {{ end }}
