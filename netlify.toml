@@ -8,8 +8,3 @@ HUGO_ENV = "production"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.74.3"
-
-[[headers]]
-  for = "/*"
-  [headers.value]
-    Set-Cookie = "SameSite=None;Secure"
