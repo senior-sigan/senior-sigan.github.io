@@ -27,5 +27,6 @@
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/google_analytics_async.html" . }}
     {{ partial "yandex_metrika.html" }}
+    <meta name="google-site-verification" content="{{ site.Params.googleVerificationId }}" />
     {{ end }}
 </head>
