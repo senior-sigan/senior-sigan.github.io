@@ -1,6 +1,6 @@
 ---
 title: "Проблема оцифровки мозгов"
-date: 2018-01_15T12:00:00+06:00
+date: 2018-01-15T12:00:00+06:00
 draft: false
 tags: ["fun", "philosophy", "ai"]
 featured: false
