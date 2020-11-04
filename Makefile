@@ -1,13 +1,22 @@
 NAME ?= 'test_post'
+YARN = node_modules/yarn/bin/yarn
+HUGO = hugo
 
 post:
-	hugo new --kind posts posts/$(NAME)
+	$(HUGO) new --kind posts posts/$(NAME)
 
 build:
-	hugo
+	cd themes/terminal && $(YARN) build
+	$(HUGO)
 
 server:
-	hugo server
+	$(HUGO) server
 
 clean:
 	rm -rf public
+
+install:
+	cd themes/terminal && \
+	npm i && \
+	npm i yarn && \
+	$(YARN)

@@ -1,7 +1,8 @@
 baseURL = "https://blog.senior-sigan.net/"
 languageCode = "ru"
-title = "Ilya Siganov"
-theme = "theme"
+title = "Ilya Siganov's blog"
+theme = "terminal"
+paginate = 10
 
 defaultContentLanguage = "ru"
 hasCJKLanguage = false
@@ -30,6 +31,27 @@ yandexWebMasterKey = "beb726920cbc64c2"
 yandexMetrika = "34801205"
 telegramDiscussSiteID = "TsEJ47sj"
 googleVerificationId = "4z2ZC3wBB3v6UYDpgvaLobRiEJ-aN_apGHtUQDiRpZo"
+
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
+# ["orange", "blue", "red", "green", "pink"]
+themeColor = "orange"
+
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 3
+
+# show selector to switch language
+showLanguageSelector = false
+
+# set theme to full screen width
+fullWidthTheme = false
+
+# center theme with default width
+centerTheme = false
+
+[params.logo]
+logoText = "Ilya Siganov's blog"
 
 [sitemap]
   changefreq = "monthly"
