@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+
+
+<article>
+    <div>
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Page.Lastmod.Format " 2006-01-02T15:04:05" }}">
+            Last updated on {{ .Page.Lastmod.Format "January 2, 2006" }}
+        </time>
+    </div>
+
+    <div id="notes-entry-container">
+        <content>
+            {{ .Content }}
+        </content>
+
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+            <div style="font-size: 0.9em">
+                <p>
+                    There are no notes linking to this note.
+                </p>
+            </div>
+        </side>
+    </div>
+</article>
+
+<hr>
+
+<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+
+{{- partial "notes_graph.html" . -}}
+
+
+
+
+
+{{ end }}

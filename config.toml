@@ -1,7 +1,7 @@
 baseURL = "https://blog.senior-sigan.net/"
 languageCode = "ru"
 title = "Ilya Siganov's blog"
-theme = "diary"
+theme = "garden"
 paginate = 10
 
 defaultContentLanguage = "ru"
