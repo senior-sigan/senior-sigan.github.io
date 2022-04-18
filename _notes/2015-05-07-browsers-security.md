@@ -5,7 +5,6 @@ draft: false
 tags: ["security"]
 featured: false
 summary: ""
-series: ""
 ---
 
 > Проблема — это не проблема, пока её никто не увидел.

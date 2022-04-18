@@ -1,11 +1,10 @@
 ---
-title: "Imagemagick Experiments 1"
+title: "Эксперимент с картинками №1"
 date: 2013-04-01T21:48:00+06:00
 draft: false
 tags: []
 featured: false
 summary: ""
-series: ["Эксперименты с картинками"]
 canonical_url: "https://vk.com/wall38057738_892"
 ---
 

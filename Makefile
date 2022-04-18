@@ -1,17 +1,12 @@
-NAME ?= 'test_post'
-YARN = node_modules/yarn/bin/yarn
-HUGO = hugo
-
 all: build
 
-post:
-	$(HUGO) new --kind posts posts/$(NAME)
-
 build:
-	$(HUGO)
+	bundle exec jekyll build
 
 server:
-	$(HUGO) server
+	bundle exec jekyll serve
 
 clean:
-	rm -rf public
+	rm -rf _site
+	rm -rf .jekyll-cache
+	rm _includes/notes_graph.json

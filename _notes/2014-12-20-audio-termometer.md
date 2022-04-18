@@ -5,7 +5,6 @@ draft: false
 tags: ["android"]
 featured: false
 summary: ""
-series: ["projects"]
 ---
 
 ![Макетная плата](/assets/audio-termometer/fRyw9kv9jmMfIpEz.jpg)

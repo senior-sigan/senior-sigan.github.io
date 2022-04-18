@@ -168,3 +168,22 @@ code {
   color: #ccc;
   cursor: help;
 }
+
+ul.archive,
+.archive li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0
+}
+
+.archive li {
+  margin: 1em 0 1.25em
+}
+
+.archive p {
+  margin-top: 0
+}
+
+.archive span {
+  opacity: 0.6
+}
