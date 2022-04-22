@@ -281,7 +281,9 @@
       ticked();
     };
 
-    const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+    const zoomHandler = d3.zoom().filter(
+      () => !d3.event.button && d3.event.ctrlKey
+    ).scaleExtent([0.2, 3]).on("zoom", resize);
 
     zoomHandler(svg);
     restart();
