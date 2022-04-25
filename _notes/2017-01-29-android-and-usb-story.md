@@ -1,6 +1,6 @@
 ---
 title: "Android and Usb Story"
-date: 2017-01-29T12:00:00+06:00
+date: 2017-01-29 12:00:00 +0600
 draft: false
 tags: ["android"]
 featured: false

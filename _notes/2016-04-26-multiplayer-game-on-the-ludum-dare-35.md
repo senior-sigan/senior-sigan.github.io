@@ -1,6 +1,6 @@
 ---
 title: "Multiplayer Game on the Ludum Dare 35"
-date: 2016-04-26T00:00:00+06:00
+date: 2016-04-26 00:00:00 +0600
 draft: false
 tags: ["gamedev"]
 featured: false

@@ -1,6 +1,6 @@
 ---
 title: "Аудио Термометр"
-date: 2014-12-20T12:00:00+06:00
+date: 2014-12-20 12:00:00 +0600
 draft: false
 tags: ["android"]
 featured: false

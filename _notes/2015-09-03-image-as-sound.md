@@ -1,6 +1,6 @@
 ---
 title: "Изображение как звук"
-date: 2015-09-03T10:00:00+06:00
+date: 2015-09-03 10:00:00 +0600
 draft: false
 tags: []
 featured: false

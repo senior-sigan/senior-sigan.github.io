@@ -1,6 +1,6 @@
 ---
 title: "New UX for Games With ML"
-date: 2018-02-03T12:00:00+06:00
+date: 2018-02-03 12:00:00 +0600
 draft: false
 tags: ["gamedev"]
 featured: false

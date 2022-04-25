@@ -1,6 +1,6 @@
 ---
 title: "Поиск похожего изображения"
-date: 2018-01-23T12:00:00+06:00
+date: 2018-01-23 12:00:00 +0600
 draft: false
 tags: ["neural networks", "image search", "knn", "machine learning"]
 featured: true
