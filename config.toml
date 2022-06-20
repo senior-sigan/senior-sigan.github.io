@@ -1,0 +1,19 @@
+title = 'Site'
+url = ''
+date_format = '%Y-%m-%d %H:%M:%S %z'
+
+[assets]
+src = 'content/assets'
+dst = 'build/assets'
+
+[markdown]
+src = 'content'
+dst = 'build'
+
+[sass]
+src = 'theme/styles'
+style = 'compressed'
+dst = 'build/app.css'
+
+[layouts]
+src = 'theme/layouts'

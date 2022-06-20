@@ -1,7 +1,6 @@
+import logging
 from html.parser import HTMLParser
 from urllib.parse import urlparse
-
-import logging
 
 logger = logging.getLogger()
 
