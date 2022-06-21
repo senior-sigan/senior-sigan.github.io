@@ -17,3 +17,6 @@ dst = 'build/app.css'
 
 [layouts]
 src = 'theme/layouts'
+
+[graph]
+dst = 'build/assets/graph.json'
