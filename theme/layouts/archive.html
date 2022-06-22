@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<content>
+    <ul class="archive">
+        {% for note in site.pages if note.layout == "default.html" %}
+        <li>
+            <a href="{{ note.url }}" class="internal-link">{{note.title}}</a>
+            <span>({{ note.date.strftime("%B %Y") }})</span>
+        </li>
+        {% endfor %}
+    </ul>
+</content>
+{% endblock %}
