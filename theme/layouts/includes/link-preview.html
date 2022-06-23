@@ -1,0 +1,14 @@
+<aside id="link-preview-block">
+    {% for linked_page in page.linked_pages %}
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="{{ linked_page.url }}">
+        <div class="tooltip-content">
+            <h1>{{ linked_page.title }}</h1>
+            <content>
+                {{ linked_page.html|safe }}
+            </content>
+        </div>
+    </div>
+    {% endfor %}
+
+    <script src="/scripts/links_preview.js"></script>
+</aside>

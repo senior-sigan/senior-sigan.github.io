@@ -15,6 +15,10 @@ src = 'theme/styles'
 style = 'compressed'
 dst = 'build/app.css'
 
+[scripts]
+src = 'theme/scripts'
+dst = 'build/scripts'
+
 [layouts]
 src = 'theme/layouts'
 
