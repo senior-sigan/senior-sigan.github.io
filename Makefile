@@ -2,7 +2,7 @@ all: clean build
 
 .PHONY:build
 build:
-	poetry run python main.py
+	ssg
 
 .PHONY:server
 server:
