@@ -1,0 +1,48 @@
+title ="Ilya's digital garden"
+url = ''
+date_format = '%Y-%m-%d %H:%M:%S %z'
+
+plugins = [
+    'ssg.plugins.md',
+    'ssg.plugins.backlinks',
+    'ssg.plugins.render_html',
+    'ssg.plugins.graph',
+    'ssg.plugins.compile_sass',
+    'ssg.plugins.copy',
+]
+
+[md]
+src = 'content'
+dst = 'build'
+layouts = 'theme/layouts'
+plugins = [
+    'ssg.plugins.frontmatter_parser',
+    'ssg.plugins.inject_title',
+    'ssg.plugins.inject_date',
+    'ssg.plugins.inject_date_iso8601',
+    'ssg.plugins.inject_layout',
+    'ssg.plugins.permalink',
+    'ssg.plugins.set_target_path',
+    'ssg.plugins.md_to_html',
+    'ssg.plugins.find_internal_links',
+]
+
+[[sass]]
+src = 'theme/styles'
+dst = 'build/app.css'
+style = 'compressed'
+
+[graph]
+dst = 'build/assets/graph.json'
+
+[[copy]]
+src = 'content/assets'
+dst = 'build/assets'
+
+[[copy]]
+src = 'theme/scripts'
+dst = 'build/scripts'
+
+[[copy]]
+src = 'theme/cv'
+dst = 'build'

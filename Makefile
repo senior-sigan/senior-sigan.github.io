@@ -1,12 +1,13 @@
-all: build
+all: clean build
 
+.PHONY:build
 build:
-	bundle exec jekyll build
+	ssg
 
+.PHONY:server
 server:
-	bundle exec jekyll serve
+	http-server build/
 
+.PHONY:clean
 clean:
-	rm -rf _site
-	rm -rf .jekyll-cache
-	rm _includes/notes_graph.json
+	rm -rf build
