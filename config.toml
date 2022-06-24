@@ -27,7 +27,7 @@ plugins = [
     'ssg.plugins.find_internal_links',
 ]
 
-[sass]
+[[sass]]
 src = 'theme/styles'
 dst = 'build/app.css'
 style = 'compressed'
@@ -42,3 +42,7 @@ dst = 'build/assets'
 [[copy]]
 src = 'theme/scripts'
 dst = 'build/scripts'
+
+[[copy]]
+src = 'theme/cv'
+dst = 'build'

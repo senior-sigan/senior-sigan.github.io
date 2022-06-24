@@ -6,7 +6,7 @@ permalink: /links
 
 # @senior_sigan
 
-- [Main Site](https://senior-sigan.notion.site)
+- [Main Site](https://senior-sigan.net)
 - [Youtube](https://www.youtube.com/channel/UCz5d8og-QZdxBk-_-bI-93g)
 - [Twitter](https://twitter.com/senior_sigan)
 - [Github](http://github.com/senior-sigan)
