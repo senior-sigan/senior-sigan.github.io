@@ -3,10 +3,10 @@
 {% block content %}
 <content>
     <ul class="archive">
-        {% for note in site.pages | sort(reverse=true, attribute="url") if note.layout == "default.html" %}
+        {% for note in site.pages | sort(reverse=true, attribute="url") if 'talk' in note.metadata.tags %}
         <li>
             <a href="{{ note.url }}" class="wikilink">{{note.title}}</a>
-            {% if page.date %}
+            {% if note.date %}
             <span>({{ note.date.strftime("%B %Y") }})</span>
             {% endif %}
         </li>
