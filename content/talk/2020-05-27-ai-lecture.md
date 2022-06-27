@@ -15,6 +15,6 @@ event: Клуб читайщих бизнесменов
 
 ## Материалы
 
-- [Видео](https://www.facebook.com/readingclubrussia/videos/908291622983811/)
+- [Видео](https://youtu.be/5PMmsSakeyY)
 - [Слайды](https://docs.google.com/presentation/d/e/2PACX-1vRBbesBj4OkGjfXFHlIgpbir9jWClJ7v-AmsJg5O0qoi-ALJ-hC2RtvSgbtYrvOWCgOOL27BNVp3nGV/pub?start=false&loop=false&delayms=3000)
 - [Сайт конференции](https://www.facebook.com/readingclubrussia/posts/1303488076512482)
