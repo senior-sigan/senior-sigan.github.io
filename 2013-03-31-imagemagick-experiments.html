@@ -81,64 +81,6 @@
 <div id="graph-wrapper"></div>
 <aside id="link-preview-block">
     
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-05-imagemagick-experiments-4">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №4</h1>
-            <content>
-                <p>Пятница, и этим всё сказано. Насладимся же сортировкой изображения. Я написал построчечную сортировку каналов и полную. Некоторые результаты были весьма неожиданными, особенно segmentation fault, иногда :D.</p>
-<h2>Частичная сортировка</h2>
-<p>Начнем с сортировки красного канала. Напомню, что машина желтая. Выглядит как закат. Ну почти.</p>
-<p><img alt="Сортировка по яркости красного канала" src="/assets/imagemagick-experiments-4/rpolbjcin7dc9r9y4d8h.jpeg" /></p>
-<p>А теперь отправим синий канал в другую сторону.</p>
-<p><img alt="Красный канал сортируется в правую сторону, синий — в левую" src="/assets/imagemagick-experiments-4/o1xdysi0xya3ivboyzp3.jpeg" /></p>
-<p>Картинка всё еще похожа на оригинал. НУЖНО ИСПРАВИТЬ ЭТОТ НЕДОЧЕТ.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-4/b99trvo3ja0t70gtlfdh.jpeg" /></p>
-<p>Вот это я понимаю искусство. Полная сортировка всех каналов в левую сторону. Поздравляю. Так бы выглядела машина на десятой скорости света.
-Мне так понравился эффект растаскивания цветов в разные стороны, что сделал еще несколько экземпляров.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-4/41dq0cfm885rqwsr77go.jpeg" /></p>
-<p>Хорошо, а вот еще одна подопытная няша. Отсортируем её полностью.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-4/tfnxhtxyixm80m8rac49.jpeg" /></p>
-<p>УПС. это не то чего я ожидал. Тьфу ты, перепутал сортировку. Часть каналов отсортирована полностью другая часть — нет. Короче я не понял, что тут произошло. Наверное баг в проге.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-4/v9pbx8b8cns2wgps66q0.jpeg" /></p>
-<p>Вот это другое дело. Полностью отсортированная картинка. Назовем её розовый градиент [s]Малевича[/s].
-Это всё. В следующем выпуске я покажу как один пиксель может “сломать” всю картинку.</p>
-<h2>Исходники</h2>
-<p><a href="https://gist.github.com/senior-sigan/5319705">https://gist.github.com/senior-sigan/5319705</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-05-04-imagemagick-experiments-8">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №8</h1>
-            <content>
-                <p>Привет!
-Сегодня у нас уроки кирпичизма. Надеюсь m$oft не наедет на меня за использование прямоугольников. Итак, что будет если мы разобьем матрицу на много подматриц произвольной формы? А если при этом произведем какую-нибудь операцию над подматрицей? Так вот, написал я тут алгоритм, наверное очень тупо, так как картинку 1900*1200 он обрабатывает десяток секунд, который перемешивает каналы у данной подматрицы. Не переживайте, я разовью эту идею дальше и будет очень забавно.</p>
-<h2>Генерация матриц</h2>
-<p>Существует 2 вида подматриц- синие зеленые и красны. Размер выбирается как случайное число.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/daegq1c3dbdvhgupp8y3.jpeg" /></p>
-<p>А здесь размер выбирается как половина от ширины матрицы. Очевидно прогрессия <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{2})^n</span><script type="math/tex">\frac{1}{2})^n</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{2})^n</span><script type="math/tex">\frac{1}{2})^n</script></span></script></span>. Ну или почти такая. Не суть.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/g3il2xvxdvl1hbqfntk9.jpeg" /></p>
-<p>Теперь случайное перемешивание в подматрицах. Обычный рандом дает не очень клевый результат.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/pdr32slb9rdg286vfi8u.jpeg" /></p>
-<p>Тут волей случая первая подматрица оказалась очень большой. FIX IT!!!!
-Вот то-то же. Нам нужен был true_random. Здесь выбирается средний размер квадратов с некоторой дельтой. Вот так красить машины надо. Это я понимаю искусство.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/0o59xkji5ryopzodz2t1.jpeg" /></p>
-<p>Теперь перекрасим няшку.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/r06gl4lyb2iufc2ltwur.jpeg" /></p>
-<blockquote>
-<p>Тебя теперь интел засудит, у них вся реклама в таком стиле)</p>
-</blockquote>
-<h2>Смешивание картинок</h2>
-<p>Нет времени объяснять, прямоугольники захватывают мир……………</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-8/swc95wnehq27ectw3t0c.jpeg" /></p>
-<p>От сложения няшек, няшность не возросла T_T.</p>
-<h2>Исходники</h2>
-<p><a href="https://github.com/senior-sigan/magick/blob/master/brick.h">https://github.com/senior-sigan/magick/blob/master/brick.h</a></p>
-            </content>
-        </div>
-    </div>
-    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-01-imagemagick-experiments-1">
         <div class="tooltip-content">
             <h1>Эксперимент с картинками №1</h1>
@@ -205,93 +147,6 @@
         </div>
     </div>
     
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-09-03-image-as-sound">
-        <div class="tooltip-content">
-            <h1>Изображение как звук</h1>
-            <content>
-                <p>А что будет если над изображением применить не обычные фильтры или спецэффекты из фотошопа, а аудио эффекты из звукового редактора, например, эхо, реверберация, эквалайзер, увеличить низкие или верхние частоты. Может быть интересно. Но как это сделать? Располагайтесь по-удобнее, сейчас на ваших глазах будет происходить магия преобразования форматов данных.</p>
-<h2>Матчасть</h2>
-<p>Чтобы применять над изображением фильтры аудио, нужно уметь сохранять и открывать изображения как звуковые файлы. Напрямую это сделать невозможно. Но в таких программах как Gimp и Audacity есть возможность работать с так называемыми сырыми данными без заголовков.</p>
-<p><img alt="ffd8ff" src="/assets/image-as-sound/563fhrnu9rzw8pi1svrk.png" />
-<em>Магическая последовательность ffd8ff означает, что это jpeg.</em></p>
-<p>Обычно в заголовках всегда описан формат данных, чтобы программы могли понимать как интерпретировать бинарные данные из полезной нагрузки. Если же мы сохраним только данные из полезной нагрузки, то получим сырые данные без заголовка(raw), которые можно интерпретировать как угодно.</p>
-<p>Чтобы сохранить картинку в формате raw, откроем ее в gimp и экспортируем как Raw Image Data с расширением .data. Выберем режим сохранения RGB Planar, т.е. в файле сначала будет идти значения яркостей пикселей канала Red, далее Green и Blue.</p>
-<p><img alt="" src="/assets/image-as-sound/72ml0czv3uke1q4iuty4.png" /></p>
-<p>В Audacity импортируем .data файл. Кодирование выбираем U-Law, без учёта байтового порядка, одноканальный режим.</p>
-<h2>Басы</h2>
-<p>Начнем с простого эффекта — увеличим басы в картинке.</p>
-<p><img alt="Исходное изображение" src="/assets/image-as-sound/9xfamigwqqeidva0o0yz.jpeg" />
-<em>Исходное изображение</em></p>
-<p>Применим увеличение басов.</p>
-<p><img alt="Увеличенные басы" src="/assets/image-as-sound/hjq5kjw3htv003g17do3.jpeg" /></p>
-<h2>Эхо</h2>
-<p>Эхо-эффект — один или несколько сигналов задержанные во времени с затуханием добавляются к существующему сигналу. Интересно посмотреть как это выглядит. Выставим время задержки 2 секунды и коэффициент затухания 0.3.</p>
-<p><img alt="Исходное изображение" src="/assets/image-as-sound/0z8gubnemmtxwpl7kcif.jpeg" /></p>
-<p><img alt="Эффект Эхо" src="/assets/image-as-sound/3ec2hmkaeoyz0hxv6ls0.jpeg" /></p>
-<p><img alt="Эффект Эхо" src="/assets/image-as-sound/e1gw2l0nduhw28t1xf6b.jpeg" /></p>
-<h2>Реверберация</h2>
-<p>Реверберация — это процесс постепенного уменьшения интенсивности звука при его многократных отражениях.</p>
-<p><img alt="Эффект реверберации" src="/assets/image-as-sound/o0jg8fnbli3lwkys3ekm.jpeg" /></p>
-<p>Есть еще куча всяких разных звуковых эффектов. А еще можно по-разному сохранять в raw-формат данные — planar RGB, просто RGB, RGB с альфа каналом, режим BMP. Можно по-другому импортировать raw-данные в звуковой редактор. В общем экспериментировать можно очень много. В следующих постах этой серии я покажу, что бывает в случае ошибки экспортирования, как сжатие влияет на данные и другие интересные опыты.</p>
-<p><a href="https://medium.com/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B/%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-c5a313765e04">Следующий пост</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-05-16-imagemagick-experiments-9">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №9</h1>
-            <content>
-                <p>Продолжаем поиск чего-то необычного и вещественного.
-В предыдущем посте я сделал “квадратное сложение” няшек. Настал час истины. Совершим же перекрёстное слияние няшек. И тут размер итогового изображения в два раза больше исходного. Для усиления умиления рекомендую смотреть как оригинал, а не превьюху!!!!</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-9/jvkjivomg6u8ozqmytsl.jpg" /></p>
-<p>Дополнительный бонус. Идеальное вмешивание картинок.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-9/flaj21d7bzk30zgt1s7i.jpeg" /></p>
-<h2>Исходники</h2>
-<p><a href="https://github.com/blan4/magick/blob/master/diffusion.h">https://github.com/blan4/magick/blob/master/diffusion.h</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-08-imagemagick-experiments-5">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №5</h1>
-            <content>
-                <p>Специально для любителей острых ощущений. Сейчас вы станете свидетелями того как каждый “пиксель” влияет на следующий с разными коэффициентами.</p>
-<p>Для простоты в данном эксперименте значение цвета предыдущего пикселя просто складывается со следующим с некоторым коэффициентом.</p>
-<p><img alt="Коэффициент 0.5 — это только начало." src="/assets/imagemagick-experiments-5/ebg2b8tcd487z4j66mdm.jpeg" /></p>
-<p><img alt="Коэффициент 0.7" src="/assets/imagemagick-experiments-5/3hpe29jwkyr8nnhzqbbu.jpeg" /></p>
-<p><img alt="Коэффициент 0.8" src="/assets/imagemagick-experiments-5/mnns10ld8i6w6qi74dka.jpeg" /></p>
-<p><img alt="Коэффициент 0.9" src="/assets/imagemagick-experiments-5/z3ztngzwb2s0acopl55e.jpeg" /></p>
-<p>И самое весёлое 1.1. Почти белый шум. Как будто телевизор плохо показывает.</p>
-<p><img alt="Коэффициент 1.1" src="/assets/imagemagick-experiments-5/jpph1wq06ctxldsqcvgb.jpeg" /></p>
-<p>В следующей части мы применим некоторую функцию от координаты пикселя и его значением над изображением.</p>
-<h2>Исходники</h2>
-<p><a href="https://github.com/senior-sigan/magick/blob/master/dependence.h">https://github.com/senior-sigan/magick/blob/master/dependence.h</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-03-imagemagick-experiments-3">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №3</h1>
-            <content>
-                <p>Нет времени объяснять-через 20 минут начинается тренировка. Просто выкладываю новую порцию картинок. Теперь я произвёл случайное перемешивание каналов.</p>
-<p>Берем 3 канала RGB. Существует всего <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">3! = 6</span><script type="math/tex">3! = 6</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">3! = 6</span><script type="math/tex">3! = 6</script></span></script></span> возможных перестановок. Каждую перестановку выбираем с равными вероятностями <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{6}</span><script type="math/tex">\frac{1}{6}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{6}</span><script type="math/tex">\frac{1}{6}</script></span></script></span>. То есть равномерное дискретное распределение. Ожидается, что картинка становится почти монохромной. Так и оказалось.</p>
-<p><img alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта." src="/assets/imagemagick-experiments-3/mvhog1p7ji8o5405se7z.jpeg" /></p>
-<p><img alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта." src="/assets/imagemagick-experiments-3/uc1hy1u30ivo9z3i1jhe.jpeg" /></p>
-<h2>Мультик-преобразование</h2>
-<p>Следующее преобразование- берем яркость канала, если она больше половины яркости, то делаем её максимальной, иначе минимальной. Я забыл как называется этот эффект, кто знает фотошоп скажите.</p>
-<p>Усиление каналов. Получаем вроде всего 8 цветов — red green blue black white cyan magenta yellow.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-3/mcu487go6pep9wfagsox.jpeg" /></p>
-<p>Няшке опять не везет. Но когда-нибудь я найду эффект, который сделает картинку фееричной.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-3/91qkynvbr9uh1jbyh0ow.jpeg" /></p>
-<h2>Исходники</h2>
-<p><a href="https://gist.github.com/senior-sigan/5301188">https://gist.github.com/senior-sigan/5301188</a></p>
-            </content>
-        </div>
-    </div>
-    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-24-imagemagick-experiments-7">
         <div class="tooltip-content">
             <h1>Эксперимент с картинками №7</h1>
@@ -340,6 +195,151 @@
 <p>В следующей серии я покажу что будет если не менять цвет пикселей, а менять их местами.</p>
 <h2>Исходники</h2>
 <p><a href="https://github.com/senior-sigan/magick/blob/master/function.h">https://github.com/senior-sigan/magick/blob/master/function.h</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-09-03-image-as-sound">
+        <div class="tooltip-content">
+            <h1>Изображение как звук</h1>
+            <content>
+                <p>А что будет если над изображением применить не обычные фильтры или спецэффекты из фотошопа, а аудио эффекты из звукового редактора, например, эхо, реверберация, эквалайзер, увеличить низкие или верхние частоты. Может быть интересно. Но как это сделать? Располагайтесь по-удобнее, сейчас на ваших глазах будет происходить магия преобразования форматов данных.</p>
+<h2>Матчасть</h2>
+<p>Чтобы применять над изображением фильтры аудио, нужно уметь сохранять и открывать изображения как звуковые файлы. Напрямую это сделать невозможно. Но в таких программах как Gimp и Audacity есть возможность работать с так называемыми сырыми данными без заголовков.</p>
+<p><img alt="ffd8ff" src="/assets/image-as-sound/563fhrnu9rzw8pi1svrk.png" />
+<em>Магическая последовательность ffd8ff означает, что это jpeg.</em></p>
+<p>Обычно в заголовках всегда описан формат данных, чтобы программы могли понимать как интерпретировать бинарные данные из полезной нагрузки. Если же мы сохраним только данные из полезной нагрузки, то получим сырые данные без заголовка(raw), которые можно интерпретировать как угодно.</p>
+<p>Чтобы сохранить картинку в формате raw, откроем ее в gimp и экспортируем как Raw Image Data с расширением .data. Выберем режим сохранения RGB Planar, т.е. в файле сначала будет идти значения яркостей пикселей канала Red, далее Green и Blue.</p>
+<p><img alt="" src="/assets/image-as-sound/72ml0czv3uke1q4iuty4.png" /></p>
+<p>В Audacity импортируем .data файл. Кодирование выбираем U-Law, без учёта байтового порядка, одноканальный режим.</p>
+<h2>Басы</h2>
+<p>Начнем с простого эффекта — увеличим басы в картинке.</p>
+<p><img alt="Исходное изображение" src="/assets/image-as-sound/9xfamigwqqeidva0o0yz.jpeg" />
+<em>Исходное изображение</em></p>
+<p>Применим увеличение басов.</p>
+<p><img alt="Увеличенные басы" src="/assets/image-as-sound/hjq5kjw3htv003g17do3.jpeg" /></p>
+<h2>Эхо</h2>
+<p>Эхо-эффект — один или несколько сигналов задержанные во времени с затуханием добавляются к существующему сигналу. Интересно посмотреть как это выглядит. Выставим время задержки 2 секунды и коэффициент затухания 0.3.</p>
+<p><img alt="Исходное изображение" src="/assets/image-as-sound/0z8gubnemmtxwpl7kcif.jpeg" /></p>
+<p><img alt="Эффект Эхо" src="/assets/image-as-sound/3ec2hmkaeoyz0hxv6ls0.jpeg" /></p>
+<p><img alt="Эффект Эхо" src="/assets/image-as-sound/e1gw2l0nduhw28t1xf6b.jpeg" /></p>
+<h2>Реверберация</h2>
+<p>Реверберация — это процесс постепенного уменьшения интенсивности звука при его многократных отражениях.</p>
+<p><img alt="Эффект реверберации" src="/assets/image-as-sound/o0jg8fnbli3lwkys3ekm.jpeg" /></p>
+<p>Есть еще куча всяких разных звуковых эффектов. А еще можно по-разному сохранять в raw-формат данные — planar RGB, просто RGB, RGB с альфа каналом, режим BMP. Можно по-другому импортировать raw-данные в звуковой редактор. В общем экспериментировать можно очень много. В следующих постах этой серии я покажу, что бывает в случае ошибки экспортирования, как сжатие влияет на данные и другие интересные опыты.</p>
+<p><a href="https://medium.com/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B/%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-c5a313765e04">Следующий пост</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-08-imagemagick-experiments-5">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №5</h1>
+            <content>
+                <p>Специально для любителей острых ощущений. Сейчас вы станете свидетелями того как каждый “пиксель” влияет на следующий с разными коэффициентами.</p>
+<p>Для простоты в данном эксперименте значение цвета предыдущего пикселя просто складывается со следующим с некоторым коэффициентом.</p>
+<p><img alt="Коэффициент 0.5 — это только начало." src="/assets/imagemagick-experiments-5/ebg2b8tcd487z4j66mdm.jpeg" /></p>
+<p><img alt="Коэффициент 0.7" src="/assets/imagemagick-experiments-5/3hpe29jwkyr8nnhzqbbu.jpeg" /></p>
+<p><img alt="Коэффициент 0.8" src="/assets/imagemagick-experiments-5/mnns10ld8i6w6qi74dka.jpeg" /></p>
+<p><img alt="Коэффициент 0.9" src="/assets/imagemagick-experiments-5/z3ztngzwb2s0acopl55e.jpeg" /></p>
+<p>И самое весёлое 1.1. Почти белый шум. Как будто телевизор плохо показывает.</p>
+<p><img alt="Коэффициент 1.1" src="/assets/imagemagick-experiments-5/jpph1wq06ctxldsqcvgb.jpeg" /></p>
+<p>В следующей части мы применим некоторую функцию от координаты пикселя и его значением над изображением.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/dependence.h">https://github.com/senior-sigan/magick/blob/master/dependence.h</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-05-04-imagemagick-experiments-8">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №8</h1>
+            <content>
+                <p>Привет!
+Сегодня у нас уроки кирпичизма. Надеюсь m$oft не наедет на меня за использование прямоугольников. Итак, что будет если мы разобьем матрицу на много подматриц произвольной формы? А если при этом произведем какую-нибудь операцию над подматрицей? Так вот, написал я тут алгоритм, наверное очень тупо, так как картинку 1900*1200 он обрабатывает десяток секунд, который перемешивает каналы у данной подматрицы. Не переживайте, я разовью эту идею дальше и будет очень забавно.</p>
+<h2>Генерация матриц</h2>
+<p>Существует 2 вида подматриц- синие зеленые и красны. Размер выбирается как случайное число.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/daegq1c3dbdvhgupp8y3.jpeg" /></p>
+<p>А здесь размер выбирается как половина от ширины матрицы. Очевидно прогрессия <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{2})^n</span><script type="math/tex">\frac{1}{2})^n</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{2})^n</span><script type="math/tex">\frac{1}{2})^n</script></span></script></span>. Ну или почти такая. Не суть.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/g3il2xvxdvl1hbqfntk9.jpeg" /></p>
+<p>Теперь случайное перемешивание в подматрицах. Обычный рандом дает не очень клевый результат.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/pdr32slb9rdg286vfi8u.jpeg" /></p>
+<p>Тут волей случая первая подматрица оказалась очень большой. FIX IT!!!!
+Вот то-то же. Нам нужен был true_random. Здесь выбирается средний размер квадратов с некоторой дельтой. Вот так красить машины надо. Это я понимаю искусство.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/0o59xkji5ryopzodz2t1.jpeg" /></p>
+<p>Теперь перекрасим няшку.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/r06gl4lyb2iufc2ltwur.jpeg" /></p>
+<blockquote>
+<p>Тебя теперь интел засудит, у них вся реклама в таком стиле)</p>
+</blockquote>
+<h2>Смешивание картинок</h2>
+<p>Нет времени объяснять, прямоугольники захватывают мир……………</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-8/swc95wnehq27ectw3t0c.jpeg" /></p>
+<p>От сложения няшек, няшность не возросла T_T.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/brick.h">https://github.com/senior-sigan/magick/blob/master/brick.h</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-05-16-imagemagick-experiments-9">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №9</h1>
+            <content>
+                <p>Продолжаем поиск чего-то необычного и вещественного.
+В предыдущем посте я сделал “квадратное сложение” няшек. Настал час истины. Совершим же перекрёстное слияние няшек. И тут размер итогового изображения в два раза больше исходного. Для усиления умиления рекомендую смотреть как оригинал, а не превьюху!!!!</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-9/jvkjivomg6u8ozqmytsl.jpg" /></p>
+<p>Дополнительный бонус. Идеальное вмешивание картинок.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-9/flaj21d7bzk30zgt1s7i.jpeg" /></p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/blan4/magick/blob/master/diffusion.h">https://github.com/blan4/magick/blob/master/diffusion.h</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-03-imagemagick-experiments-3">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №3</h1>
+            <content>
+                <p>Нет времени объяснять-через 20 минут начинается тренировка. Просто выкладываю новую порцию картинок. Теперь я произвёл случайное перемешивание каналов.</p>
+<p>Берем 3 канала RGB. Существует всего <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">3! = 6</span><script type="math/tex">3! = 6</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">3! = 6</span><script type="math/tex">3! = 6</script></span></script></span> возможных перестановок. Каждую перестановку выбираем с равными вероятностями <span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{6}</span><script type="math/tex">\frac{1}{6}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\frac{1}{6}</span><script type="math/tex">\frac{1}{6}</script></span></script></span>. То есть равномерное дискретное распределение. Ожидается, что картинка становится почти монохромной. Так и оказалось.</p>
+<p><img alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта." src="/assets/imagemagick-experiments-3/mvhog1p7ji8o5405se7z.jpeg" /></p>
+<p><img alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта." src="/assets/imagemagick-experiments-3/uc1hy1u30ivo9z3i1jhe.jpeg" /></p>
+<h2>Мультик-преобразование</h2>
+<p>Следующее преобразование- берем яркость канала, если она больше половины яркости, то делаем её максимальной, иначе минимальной. Я забыл как называется этот эффект, кто знает фотошоп скажите.</p>
+<p>Усиление каналов. Получаем вроде всего 8 цветов — red green blue black white cyan magenta yellow.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-3/mcu487go6pep9wfagsox.jpeg" /></p>
+<p>Няшке опять не везет. Но когда-нибудь я найду эффект, который сделает картинку фееричной.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-3/91qkynvbr9uh1jbyh0ow.jpeg" /></p>
+<h2>Исходники</h2>
+<p><a href="https://gist.github.com/senior-sigan/5301188">https://gist.github.com/senior-sigan/5301188</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-05-imagemagick-experiments-4">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №4</h1>
+            <content>
+                <p>Пятница, и этим всё сказано. Насладимся же сортировкой изображения. Я написал построчечную сортировку каналов и полную. Некоторые результаты были весьма неожиданными, особенно segmentation fault, иногда :D.</p>
+<h2>Частичная сортировка</h2>
+<p>Начнем с сортировки красного канала. Напомню, что машина желтая. Выглядит как закат. Ну почти.</p>
+<p><img alt="Сортировка по яркости красного канала" src="/assets/imagemagick-experiments-4/rpolbjcin7dc9r9y4d8h.jpeg" /></p>
+<p>А теперь отправим синий канал в другую сторону.</p>
+<p><img alt="Красный канал сортируется в правую сторону, синий — в левую" src="/assets/imagemagick-experiments-4/o1xdysi0xya3ivboyzp3.jpeg" /></p>
+<p>Картинка всё еще похожа на оригинал. НУЖНО ИСПРАВИТЬ ЭТОТ НЕДОЧЕТ.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-4/b99trvo3ja0t70gtlfdh.jpeg" /></p>
+<p>Вот это я понимаю искусство. Полная сортировка всех каналов в левую сторону. Поздравляю. Так бы выглядела машина на десятой скорости света.
+Мне так понравился эффект растаскивания цветов в разные стороны, что сделал еще несколько экземпляров.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-4/41dq0cfm885rqwsr77go.jpeg" /></p>
+<p>Хорошо, а вот еще одна подопытная няша. Отсортируем её полностью.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-4/tfnxhtxyixm80m8rac49.jpeg" /></p>
+<p>УПС. это не то чего я ожидал. Тьфу ты, перепутал сортировку. Часть каналов отсортирована полностью другая часть — нет. Короче я не понял, что тут произошло. Наверное баг в проге.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-4/v9pbx8b8cns2wgps66q0.jpeg" /></p>
+<p>Вот это другое дело. Полностью отсортированная картинка. Назовем её розовый градиент [s]Малевича[/s].
+Это всё. В следующем выпуске я покажу как один пиксель может “сломать” всю картинку.</p>
+<h2>Исходники</h2>
+<p><a href="https://gist.github.com/senior-sigan/5319705">https://gist.github.com/senior-sigan/5319705</a></p>
             </content>
         </div>
     </div>
