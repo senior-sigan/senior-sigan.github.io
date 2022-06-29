@@ -81,6 +81,63 @@
 <div id="graph-wrapper"></div>
 <aside id="link-preview-block">
     
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-09-imagemagick-experiments-6">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №6</h1>
+            <content>
+                <p>Сегодня был очень длинный день. Поэтому для поддержания себя в бодром состоянии, я написал следующий сценарий искажения фоток. Вас ждет снова много “вещественных” преобразований. Надеюсь, я придумаю как делать фотки пастельными, а не мерзео-эпилептическими. Итак, сегодня на очереди — применение функций от координат на насыщенность каналов. Кто хочет- может посмотреть исходники, я там замутил массив указателей на функции. Описания под картинками.</p>
+<h2>X/Y</h2>
+<p>Значение канала * (x/y). Только вот незадача. Я не перевёл во float, поэтому видны резкие границы разделения.</p>
+<p><img alt="(int)(x/y)" src="/assets/imagemagick-experiments-6/gn61wklfmmftg3ep5atf.jpeg" /></p>
+<p>Теперь плавное использвание x/y.</p>
+<p><img alt="(float)(x/y)" src="/assets/imagemagick-experiments-6/c342x0p7a7z3kc62s79p.jpeg" /></p>
+<h2>Логарифм</h2>
+<p>Логарифм произведения координат <code>log(x*y)</code>. По-моему это самый прикольный результат.</p>
+<p><img alt="log(x*y)" src="/assets/imagemagick-experiments-6/n6v3rsl1vvo00ji4oqf9.jpeg" /></p>
+<p>А что если взять log(x/y)?</p>
+<p><img alt="log(x/y)" src="/assets/imagemagick-experiments-6/3gfyi9wnv7z6dwhif365.jpeg" /></p>
+<p>Ещё один экземпляр. (прим. времени — через 2 года уже не могу вспомнить, что тут за функция. Имя файла xyyx.)</p>
+<p><img alt="xyyx" src="/assets/imagemagick-experiments-6/0ndg0khoqxeudglswu9j.jpeg" /></p>
+<h2>Sin</h2>
+<p>Quant<em>sin(x</em>y). Советую открыть оригинал и приблизить. Зрелище ооооочень странное.</p>
+<p><img alt="Quant*sin(x*y)" src="/assets/imagemagick-experiments-6/wjjzi8e8uo52qqic5yco.jpeg" /></p>
+<p>Тоже синус, но с более слабыми коэффициентами.</p>
+<p><img alt=" " src="/assets/imagemagick-experiments-6//dv0ospy750vqf5vs8stp.jpeg" /></p>
+<p>В следующей серии я покажу что будет если не менять цвет пикселей, а менять их местами.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/function.h">https://github.com/senior-sigan/magick/blob/master/function.h</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-02-imagemagick-experiments-2">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №2</h1>
+            <content>
+                <p>Сегодня была чудесная лекция по теории вероятностей. Там было что-то про ЦЕНТРАЛЬНУЮ ПРЕДЕЛЬНУЮ ТЕОРЕМУ, но не это важно. Главное то, что меня накрыло, что я понял!!! Нужно сравнить две картинки между собой.</p>
+<h2>Сравнение картинок</h2>
+<p>Итак найдем какая из картинок больше другой!
+И самое интересное. Я решил расставить все штрихи в кси( ξ). Сравниваем, что лучше аниме или обычное жалкое тридэ.
+Берём странную картинку кубиков.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/0jgo1gfzdlv8x9xtex6v.jpeg" /></p>
+<p>И милую картинку танцующих фигурок оригами.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/2vy54l3snollrp0vjel4.jpeg" /></p>
+<p>Получаем такое чудо.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/xcnw4h2fhe6lwih37873.jpeg" /></p>
+<p>Действительно очень красиво вышло. Это не просто какой-то xor или вычитание. А нежное сочетание цветов.</p>
+<h2>Аниме vs ТриДэ</h2>
+<p>Берём тридэ девушку, которая косплеит индианку.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/5xutv662nvuyqaca782r.jpeg" /></p>
+<p>И анимешную няшу.</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/156acf6d26v0yyxt9cs7.jpeg" /></p>
+<p>В итоге получаем. Аниме побеждает с огромным отрывом. Ура!!</p>
+<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/k87r0mfbdhaxxmoeg16m.jpeg" /></p>
+<h2>Исходники</h2>
+<p><a href="https://gist.github.com/senior-sigan/5293378">https://gist.github.com/senior-sigan/5293378</a></p>
+            </content>
+        </div>
+    </div>
+    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-01-imagemagick-experiments-1">
         <div class="tooltip-content">
             <h1>Эксперимент с картинками №1</h1>
@@ -119,34 +176,6 @@
         </div>
     </div>
     
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-02-imagemagick-experiments-2">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №2</h1>
-            <content>
-                <p>Сегодня была чудесная лекция по теории вероятностей. Там было что-то про ЦЕНТРАЛЬНУЮ ПРЕДЕЛЬНУЮ ТЕОРЕМУ, но не это важно. Главное то, что меня накрыло, что я понял!!! Нужно сравнить две картинки между собой.</p>
-<h2>Сравнение картинок</h2>
-<p>Итак найдем какая из картинок больше другой!
-И самое интересное. Я решил расставить все штрихи в кси( ξ). Сравниваем, что лучше аниме или обычное жалкое тридэ.
-Берём странную картинку кубиков.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/0jgo1gfzdlv8x9xtex6v.jpeg" /></p>
-<p>И милую картинку танцующих фигурок оригами.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/2vy54l3snollrp0vjel4.jpeg" /></p>
-<p>Получаем такое чудо.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/xcnw4h2fhe6lwih37873.jpeg" /></p>
-<p>Действительно очень красиво вышло. Это не просто какой-то xor или вычитание. А нежное сочетание цветов.</p>
-<h2>Аниме vs ТриДэ</h2>
-<p>Берём тридэ девушку, которая косплеит индианку.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/5xutv662nvuyqaca782r.jpeg" /></p>
-<p>И анимешную няшу.</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/156acf6d26v0yyxt9cs7.jpeg" /></p>
-<p>В итоге получаем. Аниме побеждает с огромным отрывом. Ура!!</p>
-<p><img alt="Alt Text" src="/assets/imagemagick-experiments-2/k87r0mfbdhaxxmoeg16m.jpeg" /></p>
-<h2>Исходники</h2>
-<p><a href="https://gist.github.com/senior-sigan/5293378">https://gist.github.com/senior-sigan/5293378</a></p>
-            </content>
-        </div>
-    </div>
-    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-24-imagemagick-experiments-7">
         <div class="tooltip-content">
             <h1>Эксперимент с картинками №7</h1>
@@ -166,87 +195,6 @@
 <p>В следующей части разбиение картинки на квадраты произвольного цвета и размера.</p>
 <h2>Исходники</h2>
 <p><a href="https://github.com/senior-sigan/magick/blob/master/diffusion.h">https://github.com/senior-sigan/magick/blob/master/diffusion.h</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-09-imagemagick-experiments-6">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №6</h1>
-            <content>
-                <p>Сегодня был очень длинный день. Поэтому для поддержания себя в бодром состоянии, я написал следующий сценарий искажения фоток. Вас ждет снова много “вещественных” преобразований. Надеюсь, я придумаю как делать фотки пастельными, а не мерзео-эпилептическими. Итак, сегодня на очереди — применение функций от координат на насыщенность каналов. Кто хочет- может посмотреть исходники, я там замутил массив указателей на функции. Описания под картинками.</p>
-<h2>X/Y</h2>
-<p>Значение канала * (x/y). Только вот незадача. Я не перевёл во float, поэтому видны резкие границы разделения.</p>
-<p><img alt="(int)(x/y)" src="/assets/imagemagick-experiments-6/gn61wklfmmftg3ep5atf.jpeg" /></p>
-<p>Теперь плавное использвание x/y.</p>
-<p><img alt="(float)(x/y)" src="/assets/imagemagick-experiments-6/c342x0p7a7z3kc62s79p.jpeg" /></p>
-<h2>Логарифм</h2>
-<p>Логарифм произведения координат <code>log(x*y)</code>. По-моему это самый прикольный результат.</p>
-<p><img alt="log(x*y)" src="/assets/imagemagick-experiments-6/n6v3rsl1vvo00ji4oqf9.jpeg" /></p>
-<p>А что если взять log(x/y)?</p>
-<p><img alt="log(x/y)" src="/assets/imagemagick-experiments-6/3gfyi9wnv7z6dwhif365.jpeg" /></p>
-<p>Ещё один экземпляр. (прим. времени — через 2 года уже не могу вспомнить, что тут за функция. Имя файла xyyx.)</p>
-<p><img alt="xyyx" src="/assets/imagemagick-experiments-6/0ndg0khoqxeudglswu9j.jpeg" /></p>
-<h2>Sin</h2>
-<p>Quant<em>sin(x</em>y). Советую открыть оригинал и приблизить. Зрелище ооооочень странное.</p>
-<p><img alt="Quant*sin(x*y)" src="/assets/imagemagick-experiments-6/wjjzi8e8uo52qqic5yco.jpeg" /></p>
-<p>Тоже синус, но с более слабыми коэффициентами.</p>
-<p><img alt=" " src="/assets/imagemagick-experiments-6//dv0ospy750vqf5vs8stp.jpeg" /></p>
-<p>В следующей серии я покажу что будет если не менять цвет пикселей, а менять их местами.</p>
-<h2>Исходники</h2>
-<p><a href="https://github.com/senior-sigan/magick/blob/master/function.h">https://github.com/senior-sigan/magick/blob/master/function.h</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-09-03-image-as-sound">
-        <div class="tooltip-content">
-            <h1>Изображение как звук</h1>
-            <content>
-                <p>А что будет если над изображением применить не обычные фильтры или спецэффекты из фотошопа, а аудио эффекты из звукового редактора, например, эхо, реверберация, эквалайзер, увеличить низкие или верхние частоты. Может быть интересно. Но как это сделать? Располагайтесь по-удобнее, сейчас на ваших глазах будет происходить магия преобразования форматов данных.</p>
-<h2>Матчасть</h2>
-<p>Чтобы применять над изображением фильтры аудио, нужно уметь сохранять и открывать изображения как звуковые файлы. Напрямую это сделать невозможно. Но в таких программах как Gimp и Audacity есть возможность работать с так называемыми сырыми данными без заголовков.</p>
-<p><img alt="ffd8ff" src="/assets/image-as-sound/563fhrnu9rzw8pi1svrk.png" />
-<em>Магическая последовательность ffd8ff означает, что это jpeg.</em></p>
-<p>Обычно в заголовках всегда описан формат данных, чтобы программы могли понимать как интерпретировать бинарные данные из полезной нагрузки. Если же мы сохраним только данные из полезной нагрузки, то получим сырые данные без заголовка(raw), которые можно интерпретировать как угодно.</p>
-<p>Чтобы сохранить картинку в формате raw, откроем ее в gimp и экспортируем как Raw Image Data с расширением .data. Выберем режим сохранения RGB Planar, т.е. в файле сначала будет идти значения яркостей пикселей канала Red, далее Green и Blue.</p>
-<p><img alt="" src="/assets/image-as-sound/72ml0czv3uke1q4iuty4.png" /></p>
-<p>В Audacity импортируем .data файл. Кодирование выбираем U-Law, без учёта байтового порядка, одноканальный режим.</p>
-<h2>Басы</h2>
-<p>Начнем с простого эффекта — увеличим басы в картинке.</p>
-<p><img alt="Исходное изображение" src="/assets/image-as-sound/9xfamigwqqeidva0o0yz.jpeg" />
-<em>Исходное изображение</em></p>
-<p>Применим увеличение басов.</p>
-<p><img alt="Увеличенные басы" src="/assets/image-as-sound/hjq5kjw3htv003g17do3.jpeg" /></p>
-<h2>Эхо</h2>
-<p>Эхо-эффект — один или несколько сигналов задержанные во времени с затуханием добавляются к существующему сигналу. Интересно посмотреть как это выглядит. Выставим время задержки 2 секунды и коэффициент затухания 0.3.</p>
-<p><img alt="Исходное изображение" src="/assets/image-as-sound/0z8gubnemmtxwpl7kcif.jpeg" /></p>
-<p><img alt="Эффект Эхо" src="/assets/image-as-sound/3ec2hmkaeoyz0hxv6ls0.jpeg" /></p>
-<p><img alt="Эффект Эхо" src="/assets/image-as-sound/e1gw2l0nduhw28t1xf6b.jpeg" /></p>
-<h2>Реверберация</h2>
-<p>Реверберация — это процесс постепенного уменьшения интенсивности звука при его многократных отражениях.</p>
-<p><img alt="Эффект реверберации" src="/assets/image-as-sound/o0jg8fnbli3lwkys3ekm.jpeg" /></p>
-<p>Есть еще куча всяких разных звуковых эффектов. А еще можно по-разному сохранять в raw-формат данные — planar RGB, просто RGB, RGB с альфа каналом, режим BMP. Можно по-другому импортировать raw-данные в звуковой редактор. В общем экспериментировать можно очень много. В следующих постах этой серии я покажу, что бывает в случае ошибки экспортирования, как сжатие влияет на данные и другие интересные опыты.</p>
-<p><a href="https://medium.com/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B/%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-c5a313765e04">Следующий пост</a></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-08-imagemagick-experiments-5">
-        <div class="tooltip-content">
-            <h1>Эксперимент с картинками №5</h1>
-            <content>
-                <p>Специально для любителей острых ощущений. Сейчас вы станете свидетелями того как каждый “пиксель” влияет на следующий с разными коэффициентами.</p>
-<p>Для простоты в данном эксперименте значение цвета предыдущего пикселя просто складывается со следующим с некоторым коэффициентом.</p>
-<p><img alt="Коэффициент 0.5 — это только начало." src="/assets/imagemagick-experiments-5/ebg2b8tcd487z4j66mdm.jpeg" /></p>
-<p><img alt="Коэффициент 0.7" src="/assets/imagemagick-experiments-5/3hpe29jwkyr8nnhzqbbu.jpeg" /></p>
-<p><img alt="Коэффициент 0.8" src="/assets/imagemagick-experiments-5/mnns10ld8i6w6qi74dka.jpeg" /></p>
-<p><img alt="Коэффициент 0.9" src="/assets/imagemagick-experiments-5/z3ztngzwb2s0acopl55e.jpeg" /></p>
-<p>И самое весёлое 1.1. Почти белый шум. Как будто телевизор плохо показывает.</p>
-<p><img alt="Коэффициент 1.1" src="/assets/imagemagick-experiments-5/jpph1wq06ctxldsqcvgb.jpeg" /></p>
-<p>В следующей части мы применим некоторую функцию от координаты пикселя и его значением над изображением.</p>
-<h2>Исходники</h2>
-<p><a href="https://github.com/senior-sigan/magick/blob/master/dependence.h">https://github.com/senior-sigan/magick/blob/master/dependence.h</a></p>
             </content>
         </div>
     </div>
@@ -317,6 +265,39 @@
         </div>
     </div>
     
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-09-03-image-as-sound">
+        <div class="tooltip-content">
+            <h1>Изображение как звук</h1>
+            <content>
+                <p>А что будет если над изображением применить не обычные фильтры или спецэффекты из фотошопа, а аудио эффекты из звукового редактора, например, эхо, реверберация, эквалайзер, увеличить низкие или верхние частоты. Может быть интересно. Но как это сделать? Располагайтесь по-удобнее, сейчас на ваших глазах будет происходить магия преобразования форматов данных.</p>
+<h2>Матчасть</h2>
+<p>Чтобы применять над изображением фильтры аудио, нужно уметь сохранять и открывать изображения как звуковые файлы. Напрямую это сделать невозможно. Но в таких программах как Gimp и Audacity есть возможность работать с так называемыми сырыми данными без заголовков.</p>
+<p><img alt="ffd8ff" src="/assets/image-as-sound/563fhrnu9rzw8pi1svrk.png" />
+<em>Магическая последовательность ffd8ff означает, что это jpeg.</em></p>
+<p>Обычно в заголовках всегда описан формат данных, чтобы программы могли понимать как интерпретировать бинарные данные из полезной нагрузки. Если же мы сохраним только данные из полезной нагрузки, то получим сырые данные без заголовка(raw), которые можно интерпретировать как угодно.</p>
+<p>Чтобы сохранить картинку в формате raw, откроем ее в gimp и экспортируем как Raw Image Data с расширением .data. Выберем режим сохранения RGB Planar, т.е. в файле сначала будет идти значения яркостей пикселей канала Red, далее Green и Blue.</p>
+<p><img alt="" src="/assets/image-as-sound/72ml0czv3uke1q4iuty4.png" /></p>
+<p>В Audacity импортируем .data файл. Кодирование выбираем U-Law, без учёта байтового порядка, одноканальный режим.</p>
+<h2>Басы</h2>
+<p>Начнем с простого эффекта — увеличим басы в картинке.</p>
+<p><img alt="Исходное изображение" src="/assets/image-as-sound/9xfamigwqqeidva0o0yz.jpeg" />
+<em>Исходное изображение</em></p>
+<p>Применим увеличение басов.</p>
+<p><img alt="Увеличенные басы" src="/assets/image-as-sound/hjq5kjw3htv003g17do3.jpeg" /></p>
+<h2>Эхо</h2>
+<p>Эхо-эффект — один или несколько сигналов задержанные во времени с затуханием добавляются к существующему сигналу. Интересно посмотреть как это выглядит. Выставим время задержки 2 секунды и коэффициент затухания 0.3.</p>
+<p><img alt="Исходное изображение" src="/assets/image-as-sound/0z8gubnemmtxwpl7kcif.jpeg" /></p>
+<p><img alt="Эффект Эхо" src="/assets/image-as-sound/3ec2hmkaeoyz0hxv6ls0.jpeg" /></p>
+<p><img alt="Эффект Эхо" src="/assets/image-as-sound/e1gw2l0nduhw28t1xf6b.jpeg" /></p>
+<h2>Реверберация</h2>
+<p>Реверберация — это процесс постепенного уменьшения интенсивности звука при его многократных отражениях.</p>
+<p><img alt="Эффект реверберации" src="/assets/image-as-sound/o0jg8fnbli3lwkys3ekm.jpeg" /></p>
+<p>Есть еще куча всяких разных звуковых эффектов. А еще можно по-разному сохранять в raw-формат данные — planar RGB, просто RGB, RGB с альфа каналом, режим BMP. Можно по-другому импортировать raw-данные в звуковой редактор. В общем экспериментировать можно очень много. В следующих постах этой серии я покажу, что бывает в случае ошибки экспортирования, как сжатие влияет на данные и другие интересные опыты.</p>
+<p><a href="https://medium.com/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B/%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-c5a313765e04">Следующий пост</a></p>
+            </content>
+        </div>
+    </div>
+    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-05-imagemagick-experiments-4">
         <div class="tooltip-content">
             <h1>Эксперимент с картинками №4</h1>
@@ -340,6 +321,25 @@
 Это всё. В следующем выпуске я покажу как один пиксель может “сломать” всю картинку.</p>
 <h2>Исходники</h2>
 <p><a href="https://gist.github.com/senior-sigan/5319705">https://gist.github.com/senior-sigan/5319705</a></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2013-04-08-imagemagick-experiments-5">
+        <div class="tooltip-content">
+            <h1>Эксперимент с картинками №5</h1>
+            <content>
+                <p>Специально для любителей острых ощущений. Сейчас вы станете свидетелями того как каждый “пиксель” влияет на следующий с разными коэффициентами.</p>
+<p>Для простоты в данном эксперименте значение цвета предыдущего пикселя просто складывается со следующим с некоторым коэффициентом.</p>
+<p><img alt="Коэффициент 0.5 — это только начало." src="/assets/imagemagick-experiments-5/ebg2b8tcd487z4j66mdm.jpeg" /></p>
+<p><img alt="Коэффициент 0.7" src="/assets/imagemagick-experiments-5/3hpe29jwkyr8nnhzqbbu.jpeg" /></p>
+<p><img alt="Коэффициент 0.8" src="/assets/imagemagick-experiments-5/mnns10ld8i6w6qi74dka.jpeg" /></p>
+<p><img alt="Коэффициент 0.9" src="/assets/imagemagick-experiments-5/z3ztngzwb2s0acopl55e.jpeg" /></p>
+<p>И самое весёлое 1.1. Почти белый шум. Как будто телевизор плохо показывает.</p>
+<p><img alt="Коэффициент 1.1" src="/assets/imagemagick-experiments-5/jpph1wq06ctxldsqcvgb.jpeg" /></p>
+<p>В следующей части мы применим некоторую функцию от координаты пикселя и его значением над изображением.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/dependence.h">https://github.com/senior-sigan/magick/blob/master/dependence.h</a></p>
             </content>
         </div>
     </div>
