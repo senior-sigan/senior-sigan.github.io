@@ -83,54 +83,6 @@
 <div id="graph-wrapper"></div>
 <aside id="link-preview-block">
     
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2016-04-26-multiplayer-game-on-the-ludum-dare-35">
-        <div class="tooltip-content">
-            <h1>Multiplayer Game on the Ludum Dare 35</h1>
-            <content>
-                <p>That's our 9th Ludum Dare, so we decided to make something challenging this time. We've tried to create multiplayer action-horror-shooter thingy with two characters trying to kill each other. One is a werewolf (short-range attack, wide angle of view), another one is a hunter (long-range attack, small view angle and viewing distance). And yeah, that was pretty challenging indeed for some reasons.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/ag624l2r8596cancum0v.jpg" /></p>
-<h2>Networking</h2>
-<p>We've made our first network game for LD#34. It was quite primitive, a peer-to-peer game for two players. But it proved that our team can handle network-game-specific issues and make network game at least playable. This time we decided to go further and create a server which would interconnect all game instances into pairs. That is still quite simple client-server architecture, but it required lots of time to implement and some knowledge of websockets magic.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/jmfqgwma6k1jhibzg5pz.gif" /></p>
-<h2>Dynamic shadows</h2>
-<p>Our game is based on LibGDX engine which is quite simple and, of course, doesn't have any built-in shadow support. So, shadows were made using a bunch of black triangles, dozens of math and sorting obstacles by distance, from farther to closer.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/fc21bm8gb6sq6cb1pa32.png" /></p>
-<h2>Collisions detection</h2>
-<p>Trigonometry magicCharacters should not go through trees, right? LibGDX has built-in box2d engine support, but for such simple task, it adds so much overhead to code that we decided to make everything on our own. That required some math too, and sometimes led to funny bugs such as trees making you stuck inside them and tear you apart.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/wbat2vb8o2g8y99o4sx7.jpeg" /></p>
-<h2>Soft torch beam effect</h2>
-<p>Dynamic shadowsIt may look simple. But inside it carries some OpenGL vertex and fragment shaders magic. One of us spent 5 hours or something making this effect look properly and be configurable too. This soft-beam torch effect could be also achieved with gradient transparent bitmap, but it would be less challenging and less funny to make.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/2ahpcg84vfzxsfzkz7wi.gif" /></p>
-<h2>Balancing and small details</h2>
-<p>After basic game mechanics was complete, we decided to add some more features to fix the game balance and make it more interesting to play. First, we've made a wolf jump over the trees to compensate hunter's advantage in attack range, and then we've added traces to our characters to help them find each other in the dark forest. To balance a game a bit more, we've added sounds of characters' steps so players could hear each other walking. This also makes a game more atmospheric.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/27jo9zq7p9as61itbdhj.jpeg" /></p>
-<p>After all, we are completely happy with the result and we hope you'll enjoy playing this. It's hard to find opponent sometimes, so be ready to grab your friend and play with him over the Internet.</p>
-<p>We also had a page with game statistics and Telegram chat for everyone who wants to receive notifications about active players waiting for an opponent.</p>
-<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/bipv1x0897exsz3j3nu0.png" /></p>
-<p>You can download and play our game from <a href="https://catinthedark.itch.io/za-bochok">here</a>.</p>
-<p>Gameplay video:</p>
-<p>{% youtube X_CfocY6BvQ %}</p>
-<p>Also we have a development timelapse.</p>
-<p>{% youtube qkEgv-Azkxk %}</p>
-<p><em><a href="https://medium.com/cat-in-the-dark/multiplayer-game-on-the-ludum-dare-35-jam-oh-rly-77d5dd04d51c">originally posted on medium in 2016–04–26</a> by <a href="https://medium.com/@KirillLeyfer">Kirill Leyfer</a> and <a href="https://dev.to/senior_sigan">Ilya Siganov</a></em></p>
-            </content>
-        </div>
-    </div>
-    
-    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-11-01-QRTransmitter">
-        <div class="tooltip-content">
-            <h1>QRTransmitter</h1>
-            <content>
-                <p>На днях мне пришла в голову странная идея. В действительности не такая странная, так, обычная. Просто почему бы не написать приложение под Android для передачи файлов между устройствами с помощью <a href="https://ru.wikipedia.org/wiki/QR-код">QR кодов</a>.</p>
-<p><img alt="QR transmitter app image" src="/assets/QRTransmitter/qrimage.jpg" /></p>
-<p>Да, я снова взялся за старое, не достаточно мне было <a href="https://www.youtube.com/watch?v=BZ4PDgjlmb4">передачи данных вспышкой</a>, а также через аудио разъём. Поэтому опять появилась идея с нестандартным способом отправки файлов. Закономерно спросить, а что здесь такого особенного? QR и так позволяет отправлять небольшие кусочки информации, даже бинарной(около 2953 байт). Но только представьте как это прикольно выглядит — один смартфон очень быстро меняет на своем экране QR коды, в то время как другой считывает их камерой. Никаких bluetooth, wifi, irda и прочей беспроводной магии. А QRTransmitter — вот это действительно <em>беспроводная</em> передача! А скорость? По моим расчетам в худшем случае будет приблизительно 1кб/с. Возможно получиться ускорить до 5–6кб/с, пока не знаю.</p>
-<p>Ближе к делу. За один вечер пока получилось сделать только генератор кодов. Приемник еще обдумываем вместе с <a href="https://medium.com/@KirillMegabozya">Кириллом</a>. А пока можно посмотреть забавный ролик. Потом обязательно покажу как будет работать приемник и расскажу больше технических деталей. А как же, даже в таком приложении будут интересные проблемы, например, синхронизация передатчика и приемника, выбор оптимальной частоты, определение начала и остановки.</p>
-<p>{% youtube FdU0Ge9PQX8 %}</p>
-<p>Для друзей программистов — пишем андроиде приложение на scala+gradle. Исходники <a href="https://github.com/cat-in-the-dark/QRTransmitter">тут</a>.</p>
-            </content>
-        </div>
-    </div>
-    
     <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2014-12-20-audio-termometer">
         <div class="tooltip-content">
             <h1>Аудио Термометр</h1>
@@ -224,6 +176,54 @@
 Кстати, последние несколько людумов я делаю таймлапс разработки. Некоторые люди говорят, что это залипательно.</p>
 <p>{% youtube fsnB2i9KHqs %}
 Таймлапс разработки игры.</p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2016-04-26-multiplayer-game-on-the-ludum-dare-35">
+        <div class="tooltip-content">
+            <h1>Multiplayer Game on the Ludum Dare 35</h1>
+            <content>
+                <p>That's our 9th Ludum Dare, so we decided to make something challenging this time. We've tried to create multiplayer action-horror-shooter thingy with two characters trying to kill each other. One is a werewolf (short-range attack, wide angle of view), another one is a hunter (long-range attack, small view angle and viewing distance). And yeah, that was pretty challenging indeed for some reasons.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/ag624l2r8596cancum0v.jpg" /></p>
+<h2>Networking</h2>
+<p>We've made our first network game for LD#34. It was quite primitive, a peer-to-peer game for two players. But it proved that our team can handle network-game-specific issues and make network game at least playable. This time we decided to go further and create a server which would interconnect all game instances into pairs. That is still quite simple client-server architecture, but it required lots of time to implement and some knowledge of websockets magic.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/jmfqgwma6k1jhibzg5pz.gif" /></p>
+<h2>Dynamic shadows</h2>
+<p>Our game is based on LibGDX engine which is quite simple and, of course, doesn't have any built-in shadow support. So, shadows were made using a bunch of black triangles, dozens of math and sorting obstacles by distance, from farther to closer.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/fc21bm8gb6sq6cb1pa32.png" /></p>
+<h2>Collisions detection</h2>
+<p>Trigonometry magicCharacters should not go through trees, right? LibGDX has built-in box2d engine support, but for such simple task, it adds so much overhead to code that we decided to make everything on our own. That required some math too, and sometimes led to funny bugs such as trees making you stuck inside them and tear you apart.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/wbat2vb8o2g8y99o4sx7.jpeg" /></p>
+<h2>Soft torch beam effect</h2>
+<p>Dynamic shadowsIt may look simple. But inside it carries some OpenGL vertex and fragment shaders magic. One of us spent 5 hours or something making this effect look properly and be configurable too. This soft-beam torch effect could be also achieved with gradient transparent bitmap, but it would be less challenging and less funny to make.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/2ahpcg84vfzxsfzkz7wi.gif" /></p>
+<h2>Balancing and small details</h2>
+<p>After basic game mechanics was complete, we decided to add some more features to fix the game balance and make it more interesting to play. First, we've made a wolf jump over the trees to compensate hunter's advantage in attack range, and then we've added traces to our characters to help them find each other in the dark forest. To balance a game a bit more, we've added sounds of characters' steps so players could hear each other walking. This also makes a game more atmospheric.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/27jo9zq7p9as61itbdhj.jpeg" /></p>
+<p>After all, we are completely happy with the result and we hope you'll enjoy playing this. It's hard to find opponent sometimes, so be ready to grab your friend and play with him over the Internet.</p>
+<p>We also had a page with game statistics and Telegram chat for everyone who wants to receive notifications about active players waiting for an opponent.</p>
+<p><img alt=" " src="/assets/multiplayer-game-on-the-ludum-dare-35/bipv1x0897exsz3j3nu0.png" /></p>
+<p>You can download and play our game from <a href="https://catinthedark.itch.io/za-bochok">here</a>.</p>
+<p>Gameplay video:</p>
+<p>{% youtube X_CfocY6BvQ %}</p>
+<p>Also we have a development timelapse.</p>
+<p>{% youtube qkEgv-Azkxk %}</p>
+<p><em><a href="https://medium.com/cat-in-the-dark/multiplayer-game-on-the-ludum-dare-35-jam-oh-rly-77d5dd04d51c">originally posted on medium in 2016–04–26</a> by <a href="https://medium.com/@KirillLeyfer">Kirill Leyfer</a> and <a href="https://dev.to/senior_sigan">Ilya Siganov</a></em></p>
+            </content>
+        </div>
+    </div>
+    
+    <div style="opacity: 0; display: none;" class="tooltip-wrapper" data-page-url="/2015-11-01-QRTransmitter">
+        <div class="tooltip-content">
+            <h1>QRTransmitter</h1>
+            <content>
+                <p>На днях мне пришла в голову странная идея. В действительности не такая странная, так, обычная. Просто почему бы не написать приложение под Android для передачи файлов между устройствами с помощью <a href="https://ru.wikipedia.org/wiki/QR-код">QR кодов</a>.</p>
+<p><img alt="QR transmitter app image" src="/assets/QRTransmitter/qrimage.jpg" /></p>
+<p>Да, я снова взялся за старое, не достаточно мне было <a href="https://www.youtube.com/watch?v=BZ4PDgjlmb4">передачи данных вспышкой</a>, а также через аудио разъём. Поэтому опять появилась идея с нестандартным способом отправки файлов. Закономерно спросить, а что здесь такого особенного? QR и так позволяет отправлять небольшие кусочки информации, даже бинарной(около 2953 байт). Но только представьте как это прикольно выглядит — один смартфон очень быстро меняет на своем экране QR коды, в то время как другой считывает их камерой. Никаких bluetooth, wifi, irda и прочей беспроводной магии. А QRTransmitter — вот это действительно <em>беспроводная</em> передача! А скорость? По моим расчетам в худшем случае будет приблизительно 1кб/с. Возможно получиться ускорить до 5–6кб/с, пока не знаю.</p>
+<p>Ближе к делу. За один вечер пока получилось сделать только генератор кодов. Приемник еще обдумываем вместе с <a href="https://medium.com/@KirillMegabozya">Кириллом</a>. А пока можно посмотреть забавный ролик. Потом обязательно покажу как будет работать приемник и расскажу больше технических деталей. А как же, даже в таком приложении будут интересные проблемы, например, синхронизация передатчика и приемника, выбор оптимальной частоты, определение начала и остановки.</p>
+<p>{% youtube FdU0Ge9PQX8 %}</p>
+<p>Для друзей программистов — пишем андроиде приложение на scala+gradle. Исходники <a href="https://github.com/cat-in-the-dark/QRTransmitter">тут</a>.</p>
             </content>
         </div>
     </div>
