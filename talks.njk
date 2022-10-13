@@ -1,0 +1,20 @@
+---
+title: Talks
+layout: page
+permalink: /talks/
+---
+
+{% set collection = collections.talk %}
+{% if collection | length %}
+<ul class="archive">
+    {%- for post in collection | reverse -%}
+    <li>
+        <a href="{{ post.url | url }}" class="internal-link">{{ post.data.title }}</a>
+        {% if post.date %}
+        <span>({{ post.date | readableDate }})</span>
+        {% endif %}
+    </li>
+    {%- endfor -%}
+</ul>
+{% else %}
+{% endif %}

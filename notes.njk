@@ -1,0 +1,20 @@
+---
+title: Notes
+layout: page
+permalink: /notes/
+---
+
+{% set postslist = collections.post %}
+{% if postslist | length %}
+<ul class="archive">
+    {%- for post in postslist | reverse -%}
+    <li>
+        <a href="{{ post.url | url }}" class="internal-link">{{ post.data.title }}</a>
+        {% if post.date %}
+        <span>({{ post.date | readableDate }})</span>
+        {% endif %}
+    </li>
+    {%- endfor -%}
+</ul>
+{% else %}
+{% endif %}

@@ -10,13 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-node@v3
         with:
-          python-version: "3.10"
-      - run: pip install -r requirements.txt
-      - run: python -m ssg
-      - run: touch build/.nojekyll
-      - uses: JamesIves/github-pages-deploy-action@v4.3.3
+          node-version: 16
+      - run: npm ci
+      - run: npm run build
+      - run: touch _site/.nojekyll
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          publish_dir: _site
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
