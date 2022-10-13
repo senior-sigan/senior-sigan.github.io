@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эксперимент с картинками №8</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/katex.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="internal-link" href="/"><b>Ilya&#39;s digital garden</b></a></li>
+      <li><a class="internal-link" href="/talks">Talks</a></li>
+      <li><a class="internal-link" href="/notes">Notes</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <main>
+<article>
+  <div>
+    <h1>Эксперимент с картинками №8</h1>
+    <time datetime="2013-05-04">04 May 2013</time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Привет!
+Сегодня у нас уроки кирпичизма. Надеюсь m$oft не наедет на меня за использование прямоугольников. Итак, что будет если мы разобьем матрицу на много подматриц произвольной формы? А если при этом произведем какую-нибудь операцию над подматрицей? Так вот, написал я тут алгоритм, наверное очень тупо, так как картинку 1900*1200 он обрабатывает десяток секунд, который перемешивает каналы у данной подматрицы. Не переживайте, я разовью эту идею дальше и будет очень забавно.</p>
+<h2>Генерация матриц</h2>
+<p>Существует 2 вида подматриц- синие зеленые и красны. Размер выбирается как случайное число.</p>
+<p><img src="/assets/imagemagick-experiments-8/daegq1c3dbdvhgupp8y3.jpeg" alt=" "></p>
+<p>А здесь размер выбирается как половина от ширины матрицы. Очевидно прогрессия <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\frac{1}{2})^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span>. Ну или почти такая. Не суть.</p>
+<p><img src="/assets/imagemagick-experiments-8/g3il2xvxdvl1hbqfntk9.jpeg" alt=" "></p>
+<p>Теперь случайное перемешивание в подматрицах. Обычный рандом дает не очень клевый результат.</p>
+<p><img src="/assets/imagemagick-experiments-8/pdr32slb9rdg286vfi8u.jpeg" alt=" "></p>
+<p>Тут волей случая первая подматрица оказалась очень большой. FIX IT!!!!
+Вот то-то же. Нам нужен был true_random. Здесь выбирается средний размер квадратов с некоторой дельтой. Вот так красить машины надо. Это я понимаю искусство.</p>
+<p><img src="/assets/imagemagick-experiments-8/0o59xkji5ryopzodz2t1.jpeg" alt=" "></p>
+<p>Теперь перекрасим няшку.</p>
+<p><img src="/assets/imagemagick-experiments-8/r06gl4lyb2iufc2ltwur.jpeg" alt=" "></p>
+<blockquote>
+<p>Тебя теперь интел засудит, у них вся реклама в таком стиле)</p>
+</blockquote>
+<h2>Смешивание картинок</h2>
+<p>Нет времени объяснять, прямоугольники захватывают мир……………</p>
+<p><img src="/assets/imagemagick-experiments-8/swc95wnehq27ectw3t0c.jpeg" alt=" "></p>
+<p>От сложения няшек, няшность не возросла T_T.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/brick.h">https://github.com/senior-sigan/magick/blob/master/brick.h</a></p>
+    </content>
+  </div>
+</article></main>
+  </div>
+</body>
+
+</html>

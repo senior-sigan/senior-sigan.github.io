@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эксперимент с картинками №1</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/katex.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="internal-link" href="/"><b>Ilya&#39;s digital garden</b></a></li>
+      <li><a class="internal-link" href="/talks">Talks</a></li>
+      <li><a class="internal-link" href="/notes">Notes</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <main>
+<article>
+  <div>
+    <h1>Эксперимент с картинками №1</h1>
+    <time datetime="2013-04-01">01 Apr 2013</time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Фуууф, ребята. Опоздал к пятнице сделать, так хоть 1 апреля выложу. На днях мне пришла странная идея-умножать картинки. Ну как матрицы, вы в курсе. Так вот, пришлось сегодня вечерком быстренько поверхностно изучить библиотеку ImageMagick для Си и написать на коленке прогу без очистки памяти и прочего.</p>
+<h2>Меняем местами</h2>
+<p>Итак. Начинаем с простого - поменять RGB местами, например BRG или еще как. Оказывается это очень клево выглядит(да, такое в фотошопе наверное 10 лет назад есть).
+Берём Марселину</p>
+<p><img src="/assets/imagemagick-experiments-1/c1cv9n3srwxx7kr1r6nm.jpg" alt="Исходное изображение"></p>
+<p>Получили синенькую Марселину. Няяяя</p>
+<p><img src="/assets/imagemagick-experiments-1/4gio3ung8j96d4wg9xui.jpg" alt="Трансформированное изображение"></p>
+<p>Клевая тачка желтого цвета. Надо перекрасить.</p>
+<p><img src="/assets/imagemagick-experiments-1/6kcmzkfuyndwy4o997fx.jpg" alt="Исходное изображение"></p>
+<p>Получилось круче, чем было.</p>
+<p><img src="/assets/imagemagick-experiments-1/q0426ldnmz5d609cndga.jpg" alt="Трансформированное изображение"></p>
+<h2>XOR</h2>
+<p>Далее. По просьбам друзей впилил XOR. Но это совсем не интересно, результат вполне ожидаем.</p>
+<p><img src="/assets/imagemagick-experiments-1/zhla5l9d0jkblq3xvdbf.jpg" alt="Изображение A"></p>
+<p>Применяем XOR со второй картинкой.</p>
+<p><img src="/assets/imagemagick-experiments-1/izwpqkylp48v7gxcjq83.jpg" alt="Изображение B"></p>
+<p>Получаем после XOR.</p>
+<p><img src="/assets/imagemagick-experiments-1/svw576nz25jfn00ors49.jpg" alt="A xor B"></p>
+<p>Очевидно это просто наложение картинок. Ну так немного вещественно.</p>
+<h2>Вычитание</h2>
+<p>Подумал я после XOR — А что если вычитать цвета? Получилось еще вещественнее.</p>
+<p><img src="/assets/imagemagick-experiments-1/wcqhllaxij6piwi1dh5i.jpg" alt="A - B"></p>
+<h2>Умножение</h2>
+<p>И таки да. быстро написав построчечное умножение матриц, умножил картинку саму на себя. Ожидания оправдались. ПОЛУЧИЛОСЬ ШЕДЕВРАЛЬНО.</p>
+<p>Берём квадратную картинку, для простоты. И умножаем на саму себя.</p>
+<p><img src="/assets/imagemagick-experiments-1/epqlanhlsug9eezb91d0.jpg" alt="Исходное изображение"></p>
+<p>Результат умножения картинки саму на себя. Черт возьми, да это же офигенно. Я давно не видел такой игры цвета и формы. Как изящно верх картинки косплеет под баркод. Ах.</p>
+<p><img src="/assets/imagemagick-experiments-1/sfnfj9pu5jpyt60r808s.jpg" alt="Умноженное матрично изображение на себя"></p>
+<h2>Исходники</h2>
+<p><a href="https://gist.github.com/senior-sigan/5285689">https://gist.github.com/senior-sigan/5285689</a></p>
+    </content>
+  </div>
+</article></main>
+  </div>
+</body>
+
+</html>

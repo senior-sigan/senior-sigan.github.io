@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эксперимент с картинками №6</title>
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/katex.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="internal-link" href="/"><b>Ilya&#39;s digital garden</b></a></li>
+      <li><a class="internal-link" href="/talks">Talks</a></li>
+      <li><a class="internal-link" href="/notes">Notes</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <main>
+<article>
+  <div>
+    <h1>Эксперимент с картинками №6</h1>
+    <time datetime="2013-04-09">09 Apr 2013</time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Сегодня был очень длинный день. Поэтому для поддержания себя в бодром состоянии, я написал следующий сценарий искажения фоток. Вас ждет снова много “вещественных” преобразований. Надеюсь, я придумаю как делать фотки пастельными, а не мерзео-эпилептическими. Итак, сегодня на очереди — применение функций от координат на насыщенность каналов. Кто хочет- может посмотреть исходники, я там замутил массив указателей на функции. Описания под картинками.</p>
+<h2>X/Y</h2>
+<p>Значение канала * (x/y). Только вот незадача. Я не перевёл во float, поэтому видны резкие границы разделения.</p>
+<p><img src="/assets/imagemagick-experiments-6/gn61wklfmmftg3ep5atf.jpeg" alt="(int)(x/y)"></p>
+<p>Теперь плавное использвание x/y.</p>
+<p><img src="/assets/imagemagick-experiments-6/c342x0p7a7z3kc62s79p.jpeg" alt="(float)(x/y)"></p>
+<h2>Логарифм</h2>
+<p>Логарифм произведения координат <code>log(x*y)</code>. По-моему это самый прикольный результат.</p>
+<p><img src="/assets/imagemagick-experiments-6/n6v3rsl1vvo00ji4oqf9.jpeg" alt="log(x*y)"></p>
+<p>А что если взять log(x/y)?</p>
+<p><img src="/assets/imagemagick-experiments-6/3gfyi9wnv7z6dwhif365.jpeg" alt="log(x/y)"></p>
+<p>Ещё один экземпляр. (прим. времени — через 2 года уже не могу вспомнить, что тут за функция. Имя файла xyyx.)</p>
+<p><img src="/assets/imagemagick-experiments-6/0ndg0khoqxeudglswu9j.jpeg" alt="xyyx"></p>
+<h2>Sin</h2>
+<p>Quant<em>sin(x</em>y). Советую открыть оригинал и приблизить. Зрелище ооооочень странное.</p>
+<p><img src="/assets/imagemagick-experiments-6/wjjzi8e8uo52qqic5yco.jpeg" alt="Quantsin(xy)"></p>
+<p>Тоже синус, но с более слабыми коэффициентами.</p>
+<p><img src="/assets/imagemagick-experiments-6//dv0ospy750vqf5vs8stp.jpeg" alt=" "></p>
+<p>В следующей серии я покажу что будет если не менять цвет пикселей, а менять их местами.</p>
+<h2>Исходники</h2>
+<p><a href="https://github.com/senior-sigan/magick/blob/master/function.h">https://github.com/senior-sigan/magick/blob/master/function.h</a></p>
+    </content>
+  </div>
+</article></main>
+  </div>
+</body>
+
+</html>
