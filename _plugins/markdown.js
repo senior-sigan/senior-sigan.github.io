@@ -9,6 +9,7 @@ async function createProcessor() {
   const rehypeStringify = await import("rehype-stringify");
   const remarkDirective = await import("remark-directive");
   const youtubeDirective = await import("./youtube-directive.mjs");
+  const rehypeRaw = await import("rehype-raw");
 
   // for dynamic imports we have to call .default
   return unified()
@@ -17,7 +18,8 @@ async function createProcessor() {
     .use(youtubeDirective.default)
     .use(remarkMath.default)
     .use(remarkGfm.default)
-    .use(remarkRehype.default)
+    .use(remarkRehype.default, { allowDangerousHtml: true })
+    .use(rehypeRaw.default)
     .use(rehypeKatex.default)
     .use(rehypeHighlight.default)
     .use(rehypeStringify.default);
