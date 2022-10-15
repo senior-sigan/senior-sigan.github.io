@@ -1,0 +1,61 @@
+---
+title: Home
+layout: page
+permalink: /
+---
+
+<h1>Welcome! 🌱</h1>
+<p>
+  I’m a 👨‍💻 software engineer at <a href="https://7bits.it/">7bits</a> with
+  experience in 🤖 machine learning, system design and game development.
+</p>
+<p>
+  In spare time I 🧙‍♂️ teach students programming and machine learning at
+  <a href="https://omsu.ru/">Omsk State University</a> and
+  <a href="http://itlift.1der.link/">IT-lift</a>.
+</p>
+<p>
+  Also I work on my 👨‍🎓 Ph.D dissertation on Neural Network to recommend anime
+  🌸.
+</p>
+<p>
+  Here in Omsk I started a
+  <a href="https://vk.com/mlomsk">Machine Learning community</a>
+  <a href="https://vk.com/wall-141957789_2">back in 2017</a> to evolve this
+  field in my hometown.
+</p>
+<p>My interests are neural networks, teaching, web and game development.</p>
+
+<section class="main_columns">
+  <section style="grid-area: teaching" class="main_column">
+    <h3>Teaching</h3>
+    <div>
+      <a href="https://algo.senior-sigan.ru">Алгоритмизация и программирование</a>
+    </div>
+    <div>
+      <a href="https://github.com/senior-sigan/omsu_ml">Введение в машинное обучение</a>
+    </div>
+    <div>
+      <a href="https://senior-sigan.notion.site/C-C-Programming-7431bef282dc4935ac8112b6c8189099">Основы
+        программирования</a>
+    </div>
+  </section>
+  <section style="grid-area: talks" class="main_column">
+    <h3><a href="/talks" class="main_column-header">Latest talks</a></h3>
+    {% set talkslist = collections.talk | head(-3) %} {%- for talk in talkslist
+    | reverse -%}
+    <div>
+      <a href="{{ talk.url | url }}">{{ talk.data.title }}</a>
+    </div>
+    {%- endfor -%}
+  </section>
+  <section style="grid-area: notes" class="main_column">
+    <h3><a href="/notes" class="main_column-header">Recent Notes</a></h3>
+    {% set postslist = collections.post | head(-3) %} {%- for post in postslist
+    | reverse -%}
+    <div>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </div>
+    {%- endfor -%}
+  </section>
+</section>

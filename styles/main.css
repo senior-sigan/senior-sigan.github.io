@@ -82,20 +82,6 @@ a:hover {
     background: #fffaf1;
 }
 
-a:after {
-    position: relative;
-    top: -0.5em;
-    font-size: 0.7em;
-    content: "↗";
-    color: #aaa;
-}
-
-a.internal-link:after,
-a.footnote:after,
-a.reversefootnote:after {
-    content: "";
-}
-
 *:focus {
     background: #ffe8bc !important;
     color: black !important;
@@ -184,4 +170,21 @@ iframe {
 a.internal-link {
     border-color: #8b88e6;
     background-color: #efefff;
+}
+
+.main_columns {
+    display: grid;
+    column-gap: 4rem;
+    grid-template-areas: "teaching talks notes";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main_column h3 {
+    margin-bottom: 0.66rem;
+}
+
+.main_column div {
+    display: block;
+    margin-bottom: 0.33rem;
 }
