@@ -37,12 +37,18 @@ permalink: /
     </div>
     <div>
       <a href="https://senior-sigan.notion.site/C-C-Programming-7431bef282dc4935ac8112b6c8189099">Основы
-        программирования</a>
+        программирования C/C++</a>
+    </div>
+    <div>
+      <a href="https://github.com/7bits/ml-courses-7bits">Курсы по ML от </a><a href="https://7bits.it/">7bits</a>|<a href="https://courses.itlft.ru/">IT-lift</a>
+    </div>
+    <div>
+      <a href="https://senior-sigan.github.io/fcs-programming-technology/">Python программирование</a>
     </div>
   </section>
   <section style="grid-area: talks" class="main_column">
     <h3><a href="/talks" class="main_column-header">Latest talks</a></h3>
-    {% set talkslist = collections.talk | head(-3) %} {%- for talk in talkslist
+    {% set talkslist = collections.talk | head(-5) %} {%- for talk in talkslist
     | reverse -%}
     <div>
       <a href="{{ talk.url | url }}">{{ talk.data.title }}</a>
@@ -51,7 +57,7 @@ permalink: /
   </section>
   <section style="grid-area: notes" class="main_column">
     <h3><a href="/notes" class="main_column-header">Recent Notes</a></h3>
-    {% set postslist = collections.post | head(-3) %} {%- for post in postslist
+    {% set postslist = collections.post | head(-5) %} {%- for post in postslist
     | reverse -%}
     <div>
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
