@@ -1,5 +1,5 @@
 ---
-title: Мастеркласс по разработке игр
+title: Мастер-класс по разработке игр
 data: 2022-11-07
 tags: ["talk"]
 location: Russia, Omsk
