@@ -5,11 +5,18 @@ layout: page
 
 # @senior_sigan
 
-- [Main Site](https://senior-sigan.net)
 - [Youtube](https://www.youtube.com/channel/UCz5d8og-QZdxBk-_-bI-93g)
-- [Twitter](https://twitter.com/senior_sigan)
+- [VK](https://vk.com/senior_sigan)
+- [Telegram](https://t.me/senior_sigan)
 - [Github](http://github.com/senior-sigan)
-- [vk](https://vk.com/senior_sigan)
-- [Twitch](https://www.twitch.tv/senior_sigan)
 - [Telegram Blog](https://t.me/senior_sigan_blog)
-- [Omsk ML Club](https://vk.com/mlomsk)
+
+## Чаты и сообщества
+
+- [OML: клуб машинного обучения](https://t.me/mlomsk)
+- [Omsky GameDEV: Игрой ЧИТверг](https://t.me/omsky_gamedev)
+
+## Работа
+
+- [7bits](https://7bits.ru/)
+- [Стажировка и обучение в IT-lift|7bits](https://vk.com/itliftomsk)
