@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Летняя смена НОУ Поиск 2023</title>
+  <meta name="description" content="" />
+  <!-- Yandex.Metrika counter -->
+<meta name="yandex-verification" content="721d8d42ba7b40bb" />
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(91297055, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/91297055" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/katex.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="internal-link" href="/"><b>Ilya&#39;s digital garden</b></a></li>
+      <li><a class="internal-link" href="/talks">Talks</a></li>
+      <li><a class="internal-link" href="/notes">Notes</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <main>
+<article>
+  <div>
+    <h1>Летняя смена НОУ Поиск 2023</h1>
+    <time datetime="2023-08-25">25 Aug 2023</time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <h2>Планы на смену</h2>
+<p>Еду этим августом в НОУ Поиск в ИТ смену.
+Буду рассказывать про бекенд разработку 2 недели.
+Может быть сделаю запись видео и потом выложу у себя на ютубе.</p>
+<p>Концепция — Получить понимаение как вот оно работает в интернетах ваших.</p>
+<p>Накидал план для Гигачадов.</p>
+<ol>
+<li>
+<p>Как работает интернет. Из каких частей он состоит. Накидываем всё высокоуровнево, чтобы понять, что нужно изучить. Разбираем, какие науки и предметы используются в интернете(типа физика математика и тд).</p>
+</li>
+<li>
+<p>Как общаются устройства в сети. Понятие сокета. Понятие http. Пытаемся открыть голый сокет и отправить запрос полностью вручную на сервер и получить ответ.</p>
+</li>
+<li>
+<p>Делаем сервер на чистом сокете. Узнаем что такое "слушать порт". Пытаемся отдать html вручную по сокету. Потом пишем простой чат по сети (без бд, без ничего. Типа 50 строк кода, я надеюсь)</p>
+</li>
+<li>
+<p>Понимаем, что голые сокеты — это жесть. Приходим к пониманию, зачем нужны uvicorn (asgi server), starlette (toolkit), fastapi (framework). Изучаем роутинг, виды запросов и куки/сессии.</p>
+</li>
+<li>
+<p>Ой, а как хранить данные? Знакомимся с СУБД. Небольшой экскурс в БД: базовые операции SQL. Делаем запросы в БД postgresql в консоли.</p>
+</li>
+<li>
+<p>А как делать запросы из приложения? Подключаемся напрямую по сокету в постгрес, отправляем запросы и получаем ответы. Понимаем, что это жесть и берем драйвер БД (psycopg3, asyncpg).</p>
+</li>
+<li>
+<p>Понимаем, что драйвер БД это жесть и берем ORM- либо Алхимия либо Tortoise. Учимся ими пользоваться и радуемся, как всё стало просто. Разбираем достоинства и недостатки ORM.</p>
+</li>
+</ol>
+<h2>Результаты</h2>
+<ul>
+<li>Вспомнили Python и изучили декораторы, аннотации типов, дата-классы, генераторы, асинхронность (async/await).</li>
+<li>Изучили основы работы интернета: tcp/ip, OSI, socket, port, http.</li>
+<li>Написали чат на чистых tcp сокетах. Изучили <a href="https://docs.python.org/3/howto/curses.html">curses</a>.</li>
+<li>Написали чат на websockets с помощью FastAPI.</li>
+<li>Использовали sqlite и sqlalchemy.</li>
+</ul>
+<p>Исходный код всех лекций: <a href="https://github.com/senior-sigan/nou-poisk-2023-backend">https://github.com/senior-sigan/nou-poisk-2023-backend</a></p>
+<p>Презентация проекта команды [(pdf)](<a href="https://drive.google.com/file/d/">https://drive.google.com/file/d/</a>
+1n5Qyy_esYlWWz-48rssIE79UTBcbTgmf/view?usp=sharing).</p>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRGT2krflqKz1N03OU9OkkNeCEXjKN0DEn99xcTvP-KNANqxlWRQFHFvJcc-6rGJQ/embed?start=false&#x26;loop=false&#x26;delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<h2>Ночная лекция</h2>
+<p>Прочитал лекцию про нейросети: <a href="/talk/2023-08-17-nou_posik_night_lection/">"Как стать кошкодевочкой"</a></p>
+    </content>
+  </div>
+</article></main>
+  </div>
+</body>
+
+</html>
