@@ -39,7 +39,7 @@ layout: post
 
 Исходный код всех лекций: https://github.com/senior-sigan/nou-poisk-2023-backend
 
-Презентация проекта команды [(pdf)](https://drive.google.com/file/d/
+Презентация проекта команды [pdf](https://drive.google.com/file/d/
 1n5Qyy_esYlWWz-48rssIE79UTBcbTgmf/view?usp=sharing).
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRGT2krflqKz1N03OU9OkkNeCEXjKN0DEn99xcTvP-KNANqxlWRQFHFvJcc-6rGJQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
