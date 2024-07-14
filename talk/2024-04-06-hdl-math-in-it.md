@@ -1,0 +1,19 @@
+---
+title: "МАТЕМАТИКА В ИТ"
+date: 2024-04-14
+tags: ["talk"]
+location: Russia, Omsk
+event: HappyDev Lite, Конгресс холл, ул. 70 лет Октября, 25к2
+layout: post
+---
+
+## О докладе
+
+В школе и универе мы изучаем всякие матаны, алгебры, терверы. А потом на работе совсем не пользуемся этими знаниями. Или пользуемся? Попробуем же расширить сознание и впустить математику в нашу жизнь. Научимся её замечать вокруг, и вы поймёте, какая она увлекательная, наглядная и по-своему красивая
+
+<iframe src="https://vk.com/video_ext.php?oid=-45419039&id=456239718&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZGdv1-e60Iy8kugFq16uWDPUs5yeYLbukr84Vm8LHazkYrnhH5k98_suS-QWWCAuuRG3GEmuTp-SU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+- [Слайды](https://docs.google.com/presentation/d/e/2PACX-1vSZGdv1-e60Iy8kugFq16uWDPUs5yeYLbukr84Vm8LHazkYrnhH5k98_suS-QWWCAuuRG3GEmuTp-SU/pub?start=false&loop=false&delayms=3000)
+- [Виде](https://vk.com/video-45419039_456239718)
