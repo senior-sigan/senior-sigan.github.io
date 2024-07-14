@@ -571,8 +571,17 @@
     
        
         <url>
+            <loc>/talk/2024-06-17-gamedev-cityheroes/</loc>
+            <lastmod>2024-06-17T00:00:00.000Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+    
+       
+        <url>
             <loc>/</loc>
-            <lastmod>2024-02-14T09:10:56.882Z</lastmod>
+            <lastmod>2024-07-14T08:53:05.005Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -581,7 +590,7 @@
        
         <url>
             <loc>/links/</loc>
-            <lastmod>2024-02-14T09:10:56.882Z</lastmod>
+            <lastmod>2024-07-14T08:53:05.005Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -590,7 +599,7 @@
        
         <url>
             <loc>/notes/</loc>
-            <lastmod>2024-02-14T09:10:56.882Z</lastmod>
+            <lastmod>2024-07-14T08:53:05.005Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -599,7 +608,7 @@
        
         <url>
             <loc>/projects/</loc>
-            <lastmod>2024-02-14T09:10:56.882Z</lastmod>
+            <lastmod>2024-07-14T08:53:05.005Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -608,7 +617,7 @@
        
         <url>
             <loc>/talks/</loc>
-            <lastmod>2024-02-14T09:10:56.886Z</lastmod>
+            <lastmod>2024-07-14T08:53:05.009Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
