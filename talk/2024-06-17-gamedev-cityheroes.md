@@ -1,5 +1,5 @@
 ---
-title: "ВРЫВАЕМСЯ В GAMEDEV"
+title: "Врываемся в gamedev"
 date: 2024-06-17
 tags: ["talk"]
 location: Russia, Omsk
