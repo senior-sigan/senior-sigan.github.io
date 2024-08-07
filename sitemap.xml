@@ -589,8 +589,17 @@
     
        
         <url>
+            <loc>/talk/2024-07-31-nou_posik_night_lection/</loc>
+            <lastmod>2024-07-31T00:00:00.000Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+    
+       
+        <url>
             <loc>/</loc>
-            <lastmod>2024-07-14T09:08:38.892Z</lastmod>
+            <lastmod>2024-08-07T08:45:33.843Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -599,7 +608,7 @@
        
         <url>
             <loc>/links/</loc>
-            <lastmod>2024-07-14T09:08:38.892Z</lastmod>
+            <lastmod>2024-08-07T08:45:33.843Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -608,7 +617,7 @@
        
         <url>
             <loc>/notes/</loc>
-            <lastmod>2024-07-14T09:08:38.892Z</lastmod>
+            <lastmod>2024-08-07T08:45:33.843Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -617,7 +626,7 @@
        
         <url>
             <loc>/projects/</loc>
-            <lastmod>2024-07-14T09:08:38.892Z</lastmod>
+            <lastmod>2024-08-07T08:45:33.843Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -626,7 +635,7 @@
        
         <url>
             <loc>/talks/</loc>
-            <lastmod>2024-07-14T09:08:38.896Z</lastmod>
+            <lastmod>2024-08-07T08:45:33.847Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
