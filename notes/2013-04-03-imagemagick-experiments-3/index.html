@@ -29,15 +29,39 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a class="internal-link" href="/"><b>Ilya&#39;s digital garden</b></a></li>
-      <li><a class="internal-link" href="/talks">Talks</a></li>
-      <li><a class="internal-link" href="/notes">Notes</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <pre class="ascii-art">
+          ####***************+==:.  .:=+**###**-..:.....=*+-*********************=-::::+*****************=********
+          ********************+=:. .:=+*##*:==......::=*-:****************#*+::.....-==********:-******#**********
+          ....-=+****************+-+*##%*-:::::.:....--:=*###*********#*+:::::-:::::+*###**=:.:=**#***#***********
+          ----**##********###*****##%%%=::=....:-#%%#*=-:-+*#*#*#*#*#+=---:::....:===-::......:*+=*###************
+          %%%%%%%%#########*#*#####%%#-...  :##%%*#%#-.....:=*####*-.......:---=**+=-:::......=::=*#**#*#*#*#*#***
+          %%%%%%%######*#*#*#####%%*=:.... .******=:..........::==:.......   . :*%%%#**:::=*-...:***#****#*#*#*###
+          %%%%%#########*#######*-:::::.....:::::.::..................... .+%%%%%%%%%=. .::.    :-+***##*###*#*###
+          %%%%#%#####**#*####*=::::-:::.........::-::.................... :******++: ........:-+****#*##%####*#***
+          %%%%%**+*+:+***#***::.::::::.......::::..........................::::..........::+***#*###%%%###########
+          ---::::..  .::-=+*=..............::*%%%%%%%##**+==--::::...................:::=*######%%%%##*#######%%%%
+          ---===-:::.:+####*+:.............:=%%%%%%%%%%%%%%%%%%%%*:..........:::::-+******+*%%%%%#********#%%%%%%%
+          +++=:::::::=%%%###*-:............:#%%%%%%%%%%%%%%%%%%%%+:........:::::::::::::+%%%%#******+=-.:=****#%%%
+          :::::::::-#%%%%####*=::.:......:.:*%#**++===++***#%%%%*:.........:::::::::=*#####*#*#*****#*=..::::::***
+        </pre>
+      </a>
+    </div>
 
-  <div class="wrapper">
+    <table>
+      <tbody>
+        <tr>
+          <td style="width: 33%;"><a href="/teaching">Курсы</a></td>
+          <td style="width: 33%;"><a href="/notes">Заметки</a></td>
+          <td style="width: 33%;"><a href="/talks">Выступления</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <div>
     <main>
 <article>
   <div>
@@ -48,7 +72,7 @@
   <div id="notes-entry-container">
     <content>
       <p>Нет времени объяснять-через 20 минут начинается тренировка. Просто выкладываю новую порцию картинок. Теперь я произвёл случайное перемешивание каналов.</p>
-<p>Берем 3 канала RGB. Существует всего <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">3! = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">3</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span></span> возможных перестановок. Каждую перестановку выбираем с равными вероятностями <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>. То есть равномерное дискретное распределение. Ожидается, что картинка становится почти монохромной. Так и оказалось.</p>
+<p>Берем 3 канала RGB. Существует всего <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">3! = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">3</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span> возможных перестановок. Каждую перестановку выбираем с равными вероятностями <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>. То есть равномерное дискретное распределение. Ожидается, что картинка становится почти монохромной. Так и оказалось.</p>
 <p><img src="/assets/imagemagick-experiments-3/mvhog1p7ji8o5405se7z.jpeg" alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта."></p>
 <p><img src="/assets/imagemagick-experiments-3/uc1hy1u30ivo9z3i1jhe.jpeg" alt="Перемешивание цветов. Увеличьте фотографию, для усиления эффекта."></p>
 <h2>Мультик-преобразование</h2>

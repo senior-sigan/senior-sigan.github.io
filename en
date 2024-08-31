@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Как делают машинный интеллект с помощью нейросетей</title>
+  <title>Home</title>
   <meta name="description" content="" />
   <!-- Yandex.Metrika counter -->
 <meta name="yandex-verification" content="721d8d42ba7b40bb" />
@@ -63,28 +63,83 @@
 
   <div>
     <main>
-<article>
-  <div>
-    <h1>Как делают машинный интеллект с помощью нейросетей</h1>
-    <time datetime="2020-06-09">09 Jun 2020</time>
-  </div>
+<content>
+  
+<section>
+  <h1>He, I'm Ilya</h1>
+  <p>
+    I’m a software engineer at <a href="https://7bits.it/">7bits</a> with
+    experience in machine learning, system design and game development.
+  </p>
+  <p>
+    In spare time I teach students programming and machine learning at
+    <a href="https://omsu.ru/">Omsk State University</a> and
+    <a href="http://itlift.1der.link/">IT-lift</a>.
+  </p>
+  <p>
+    Here in Omsk I started a
+    <a href="https://vk.com/mlomsk">Machine Learning community</a>
+    <a href="https://vk.com/wall-141957789_2">back in 2017</a> to evolve this
+    field in my hometown.
+  </p>
+  <p>My interests are neural networks, teaching, web and game development.</p>
+</section>
 
-  <div id="notes-entry-container">
-    <content>
-      <h2>О докладе</h2>
-<p>Какие задачи человек может решать эффективнее, чем искусственный интеллект?
-Об этом тема нашего нового вебинара "Как делают машинный интеллект при помощи нейронных сетей".
-Уже завтра (27 мая) в 15:00 Мск Анна Тарасенко (директор ИТ компании 7bits) и Илья Сиганов (ведущий специалист по машинному обучению и анализу данных компании 7bits) популярно объяснят, как работают искусственные нейронные сети и чем они отличаются от тех, что действуют в нашем мозгу? Что лучше поручить искусственному интеллекту, а что выгоднее оставить за человеком?
-Напомним бесплатные вебинары специально проводятся, чтобы глубже вникнуть в тему перед обсуждением книги “Искусственный интеллект. Угрозы. Этапы. Стратегия” Ника Бострома. 10 июня известный маркетолог Гарретт Джонстон представит ее на онлайн-встрече нашего сообщества.</p>
-<h2>Материалы</h2>
-<ul>
-<li><a href="https://youtu.be/5PMmsSakeyY">Видео</a></li>
-<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRBbesBj4OkGjfXFHlIgpbir9jWClJ7v-AmsJg5O0qoi-ALJ-hC2RtvSgbtYrvOWCgOOL27BNVp3nGV/pub?start=false&#x26;loop=false&#x26;delayms=3000">Слайды</a></li>
-<li><a href="https://www.facebook.com/readingclubrussia/posts/1303488076512482">Сайт конференции</a></li>
-</ul>
-    </content>
+<section>
+  <h2>Recent notes</h2>
+
+  <div>
+      <a href="/notes/2023-08-25-nou-posk-summer/">Летняя смена НОУ Поиск 2023</a>
+    </div><div>
+      <a href="/notes/2022-11-14-for-nou-poisk/">Материалы для участников осенней школы НОУ Поиск</a>
+    </div><div>
+      <a href="/notes/2018-04-26-ludumdare-41/">Ludumdare 41</a>
+    </div><div>
+      <a href="/notes/2018-02-03-new-ux-for-games-with-ml/">New UX for Games With ML</a>
+    </div><div>
+      <a href="/notes/2018-01-23-similar-images-search/">Поиск похожего изображения</a>
+    </div></section>
+
+<hr></hr>
+
+<section>
+  <h2>Recent talks</h2>
+  <div>
+      <a href="/talk/2024-07-31-nou_posik_night_lection/">История ИИ</a>
+    </div><div>
+      <a href="/talk/2024-06-17-gamedev-cityheroes/">Врываемся в gamedev</a>
+    </div><div>
+      <a href="/talk/2024-04-14-math-in-it/">Математика в IT</a>
+    </div><div>
+      <a href="/talk/2024-02-03-cdo_ai/">Большие данные и машинное обучение</a>
+    </div><div>
+      <a href="/talk/2024-01-26-math-gamedev/">Математика в играх</a>
+    </div></section>
+
+<hr></hr>
+
+<section>
+  <h2>Teaching</h2>
+
+  <div>
+    <a href="https://algo.senior-sigan.ru">Алгоритмизация и программирование</a>
   </div>
-</article></main>
+  <div>
+    <a href="https://github.com/senior-sigan/omsu_ml">Введение в машинное обучение</a>
+  </div>
+  <div>
+    <a href="https://senior-sigan.notion.site/C-C-Programming-7431bef282dc4935ac8112b6c8189099">Основы
+      программирования C/C++</a>
+  </div>
+  <div>
+    <a href="https://github.com/7bits/ml-courses-7bits">Курсы по ML от </a><a href="https://7bits.it/">7bits</a>|<a href="https://courses.itlft.ru/">IT-lift</a>
+  </div>
+  <div>
+    <a href="https://senior-sigan.github.io/fcs-programming-technology/">Python программирование</a>
+  </div>
+</section>
+
+</content></main>
   </div>
 </body>
 
