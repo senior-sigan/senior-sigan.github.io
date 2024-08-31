@@ -1,34 +1,31 @@
 ---
 title: Home
 layout: page
-permalink: /
+permalink: /en
 ---
 
 <section>
-  <h1>Сиганов Илья</h1>
-
+  <h1>He, I'm Ilya</h1>
   <p>
-    Тимлид в <a href="https://7bits.it">7bits</a>. Создаю высоконагруженные Веб-сервисы. Пишу на go, c++, nodejs, python, kotlin.
+    I’m a software engineer at <a href="https://7bits.it/">7bits</a> with
+    experience in machine learning, system design and game development.
   </p>
-
   <p>
-    Читаю лекции в <a href="https://omsu.ru/">ОмГУ</a> по алгоритмам, машинному обучению, комп. графике.
-    Преподавал разработку игр в <a href="http://itlift.1der.link/">IT-Lift</a>.
+    In spare time I teach students programming and machine learning at
+    <a href="https://omsu.ru/">Omsk State University</a> and
+    <a href="http://itlift.1der.link/">IT-lift</a>.
   </p>
-
-  <p>Организую <a href="/org/omsky-gamedev">Игровой ЧИТверг</a> - сообщество разработчиков игр.
-    И <a href="/org/oml">OML</a> - клуб Машинного обучения в Омске.</p>
-
-  <p>Регулярно участвую в хакатонах по разработке игр Ludum Dare, GMTK, Mini Jam, как команда CAT_IN_THE_DARK.</p>
-
-  <p>Интересы: распределенные системы, concurrency, нейросети, разработка игр, языки программирования, преподавание, организация событий.</p>
-
+  <p>
+    Here in Omsk I started a
+    <a href="https://vk.com/mlomsk">Machine Learning community</a>
+    <a href="https://vk.com/wall-141957789_2">back in 2017</a> to evolve this
+    field in my hometown.
+  </p>
+  <p>My interests are neural networks, teaching, web and game development.</p>
 </section>
 
-<hr></hr>
-
 <section>
-  <h2>Недавние заметки</h2>
+  <h2>Recent notes</h2>
 
   {% set postslist = collections.post | head(-5) %} {%- for post in postslist | reverse -%}
     <div>
@@ -40,7 +37,7 @@ permalink: /
 <hr></hr>
 
 <section>
-  <h2>Недавние лекции</h2>
+  <h2>Recent talks</h2>
   {% set talkslist = collections.talk | head(-5) %} {%- for talk in talkslist | reverse -%}
     <div>
       <a href="{{ talk.url | url }}">{{ talk.data.title }}</a>
@@ -51,7 +48,7 @@ permalink: /
 <hr></hr>
 
 <section>
-  <h2>Курсы</h2>
+  <h2>Teaching</h2>
 
   <div>
     <a href="https://algo.senior-sigan.ru">Алгоритмизация и программирование</a>

@@ -1,0 +1,30 @@
+.ascii-art {
+  font-size: 8.3px;
+  line-height: 10px;
+}
+
+@media (max-width: 780px) {
+  .ascii-art {
+    font-size: 5px;
+    line-height: 6px;
+  }
+}
+
+pre.ascii-art {
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+ol p {
+  display: inline;
+}

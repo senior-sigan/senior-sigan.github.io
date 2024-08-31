@@ -1,5 +1,5 @@
 @charset 'utf-8';
 
 @import 'normalize.css';
-@import 'main.css';
-@import 'code-light-theme.css';
+@import 'monospace-web.css';
+@import 'custom.css';
