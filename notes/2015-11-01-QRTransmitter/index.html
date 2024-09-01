@@ -46,15 +46,17 @@
 </pre>
       </a>
     </div>
-    <table>
-      <tbody>
-        <tr>
-          <td style="width: 33%;"><a href="/teaching">Курсы</a></td>
-          <td style="width: 33%;"><a href="/notes">Заметки</a></td>
-          <td style="width: 33%;"><a href="/talks">Выступления</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <nav>
+      <table>
+        <tbody>
+          <tr>
+            <td style="width: 33%;"><a class="no-decoration-link" href="/teaching">Курсы</a></td>
+            <td style="width: 33%;"><a class="no-decoration-link" href="/notes">Заметки</a></td>
+            <td style="width: 33%;"><a class="no-decoration-link" href="/talks">Выступления</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
   </header>
 
   <div>
@@ -71,7 +73,7 @@
 <p><img src="/assets/QRTransmitter/qrimage.jpg" alt="QR transmitter app image"></p>
 <p>Да, я снова взялся за старое, не достаточно мне было <a href="https://www.youtube.com/watch?v=BZ4PDgjlmb4">передачи данных вспышкой</a>, а также через аудио разъём. Поэтому опять появилась идея с нестандартным способом отправки файлов. Закономерно спросить, а что здесь такого особенного? QR и так позволяет отправлять небольшие кусочки информации, даже бинарной(около 2953 байт). Но только представьте как это прикольно выглядит — один смартфон очень быстро меняет на своем экране QR коды, в то время как другой считывает их камерой. Никаких bluetooth, wifi, irda и прочей беспроводной магии. А QRTransmitter — вот это действительно <em>беспроводная</em> передача! А скорость? По моим расчетам в худшем случае будет приблизительно 1кб/с. Возможно получиться ускорить до 5–6кб/с, пока не знаю.</p>
 <p>Ближе к делу. За один вечер пока получилось сделать только генератор кодов. Приемник еще обдумываем вместе с <a href="https://medium.com/@KirillMegabozya">Кириллом</a>. А пока можно посмотреть забавный ролик. Потом обязательно покажу как будет работать приемник и расскажу больше технических деталей. А как же, даже в таком приложении будут интересные проблемы, например, синхронизация передатчика и приемника, выбор оптимальной частоты, определение начала и остановки.</p>
-<iframe src="https://www.youtube.com/embed/FdU0Ge9PQX8" width="640" height="360" frameborder="0" allow="picture-in-picture" allowfullscreen>Демонстрация QRTransmitter</iframe>
+<iframe src="https://www.youtube.com/embed/FdU0Ge9PQX8" width="768" height="455" frameborder="0" allow="picture-in-picture" allowfullscreen>Демонстрация QRTransmitter</iframe>
 <p>Для друзей программистов — пишем андроиде приложение на scala+gradle. Исходники <a href="https://github.com/cat-in-the-dark/QRTransmitter">тут</a>.</p>
     </content>
   </div>

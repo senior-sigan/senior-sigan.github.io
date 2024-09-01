@@ -18,8 +18,19 @@ pre.ascii-art {
 
 .logo a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 ol p {
   display: inline;
+}
+
+.post-meta {
+  margin-top: 0.5ch;
+  color: var(--text-color-alt);
+}
+
+a.no-decoration-link {
+  color: var(--text-color);
+  text-decoration: none;
 }

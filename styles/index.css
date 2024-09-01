@@ -3,3 +3,6 @@
 @import 'normalize.css';
 @import 'monospace-web.css';
 @import 'custom.css';
+
+@import 'code-light-theme.css' screen;
+@import 'code-dark-theme.css' screen and (prefers-color-scheme: dark);
