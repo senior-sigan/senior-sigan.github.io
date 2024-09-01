@@ -9,6 +9,7 @@ async function createProcessor() {
   const rehypeStringify = await import("rehype-stringify");
   const remarkDirective = await import("remark-directive");
   const youtubeDirective = await import("./youtube-directive.mjs");
+  const slidesDirective = await import("./google-slides.mjs");
   const rehypeRaw = await import("rehype-raw");
 
   // for dynamic imports we have to call .default
@@ -16,6 +17,7 @@ async function createProcessor() {
     .use(remarkParse.default)
     .use(remarkDirective.default)
     .use(youtubeDirective.default)
+    .use(slidesDirective.default)
     .use(remarkMath.default)
     .use(remarkGfm.default)
     .use(remarkRehype.default, { allowDangerousHtml: true })

@@ -8,15 +8,11 @@ permalink: /talks/
 
 {% set collection = collections.talk %}
 {% if collection | length %}
-<ul class="archive">
-    {%- for post in collection | reverse -%}
-    <li>
-        <a href="{{ post.url | url }}" class="internal-link">{{ post.data.title }}</a>
-        {% if post.date %}
-        <span>({{ post.date | readableDate }})</span>
-        {% endif %}
-    </li>
-    {%- endfor -%}
-</ul>
+{%- for post in collection | reverse -%}
+<div>
+    <div class="post-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></div>
+    <div class="post-meta"><span>{{ post.date | readableDate }}</span></div>
+</div>
+{%- endfor -%}
 {% else %}
 {% endif %}

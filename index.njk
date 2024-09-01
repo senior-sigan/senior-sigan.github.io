@@ -30,9 +30,10 @@ permalink: /
 <section>
   <h2>Недавние заметки</h2>
 
-  {% set postslist = collections.post | head(-5) %} {%- for post in postslist | reverse -%}
+  {% set postslist = collections.post | head(-5) %} {%- for entry in postslist | reverse -%}
     <div>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      <div class="post-title"><a href="{{ entry.url | url }}">{{ entry.data.title }}</a></div>
+      <div class="post-meta"><span>{{ entry.date | readableDate }}</span></div>
     </div>
   {%- endfor -%}
 </section>
@@ -40,10 +41,11 @@ permalink: /
 <hr></hr>
 
 <section>
-  <h2>Недавние лекции</h2>
-  {% set talkslist = collections.talk | head(-5) %} {%- for talk in talkslist | reverse -%}
+  <h2>Недавние выступления</h2>
+  {% set talkslist = collections.talk | head(-5) %} {%- for entry in talkslist | reverse -%}
     <div>
-      <a href="{{ talk.url | url }}">{{ talk.data.title }}</a>
+      <div class="post-title"><a href="{{ entry.url | url }}">{{ entry.data.title }}</a></div>
+      <div class="post-meta"><span>{{ entry.date | readableDate }}</span></div>
     </div>
   {%- endfor -%}
 </section>
@@ -64,7 +66,7 @@ permalink: /
       программирования C/C++</a>
   </div>
   <div>
-    <a href="https://github.com/7bits/ml-courses-7bits">Курсы по ML от </a><a href="https://7bits.it/">7bits</a>|<a href="https://courses.itlft.ru/">IT-lift</a>
+    <a href="https://github.com/7bits/ml-courses-7bits">Курсы по ML от 7bits|IT-lift</a>
   </div>
   <div>
     <a href="https://senior-sigan.github.io/fcs-programming-technology/">Python программирование</a>

@@ -41,7 +41,7 @@ layout: post
 
 Презентация проекта команды [pdf](https://drive.google.com/file/d/1n5Qyy_esYlWWz-48rssIE79UTBcbTgmf/view?usp=sharing).
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRGT2krflqKz1N03OU9OkkNeCEXjKN0DEn99xcTvP-KNANqxlWRQFHFvJcc-6rGJQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="730" height="427" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRGT2krflqKz1N03OU9OkkNeCEXjKN0DEn99xcTvP-KNANqxlWRQFHFvJcc-6rGJQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="768" height="455" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Ночная лекция
 

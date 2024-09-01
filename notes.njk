@@ -8,15 +8,11 @@ permalink: /notes/
 
 {% set postslist = collections.post %}
 {% if postslist | length %}
-<ul class="archive">
     {%- for post in postslist | reverse -%}
-    <li>
-        <a href="{{ post.url | url }}" class="internal-link">{{ post.data.title }}</a>
-        {% if post.date %}
-        <span>({{ post.date | readableDate }})</span>
-        {% endif %}
-    </li>
+    <div>
+        <div class="post-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></div>
+        <div class="post-meta"><span>{{ post.date | readableDate }}</span></div>
+    </div>
     {%- endfor -%}
-</ul>
 {% else %}
 {% endif %}

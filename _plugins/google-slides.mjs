@@ -1,8 +1,8 @@
 import { visit } from "unist-util-visit";
 
-// This plugin turns `::youtube` into iframes.
+// This plugin turns `::slides` into iframes.
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
-export default function youtubeDirective() {
+export default function slidesDirective() {
   return (tree, file) => {
     visit(tree, (node) => {
       if (
@@ -10,24 +10,25 @@ export default function youtubeDirective() {
         node.type === "leafDirective" ||
         node.type === "containerDirective"
       ) {
-        if (node.name !== "youtube") return;
+        if (node.name !== "slides") return;
 
         const data = node.data || (node.data = {});
         const attributes = node.attributes || {};
         const id = attributes.id;
 
         if (node.type === "textDirective")
-          file.fail("Text directives for `youtube` not supported", node);
-        if (!id) file.fail("Missing video id", node);
+          file.fail("Text directives for `slides` not supported", node);
+        if (!id) file.fail("Missing slides id", node);
 
         data.hName = "iframe";
         data.hProperties = {
-          src: "https://www.youtube.com/embed/" + id,
+          src: "https://docs.google.com/presentation/d/e/" + id + "/embed?start=false",
           width: 768,
           height: 455,
           frameBorder: 0,
-          allow: "picture-in-picture",
           allowFullScreen: true,
+          mozallowfullscreen: true,
+          webkitallowfullscreen: true,
         };
       }
     });
