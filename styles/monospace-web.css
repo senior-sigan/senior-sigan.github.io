@@ -1,6 +1,6 @@
 /* MIT License | https://github.com/owickstrom/the-monospace-web */
 
-@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+@import url('./jetbrains-mono.css');
 
 :root {
   --font-family: "JetBrains Mono", monospace;
