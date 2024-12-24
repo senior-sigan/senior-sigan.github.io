@@ -1,33 +1,33 @@
-async function createProcessor() {
-  const rehypeHighlight = await import("rehype-highlight");
-  const rehypeKatex = await import("rehype-katex");
-  const remarkGfm = await import("remark-gfm");
-  const remarkMath = await import("remark-math");
-  const remarkParse = await import("remark-parse");
-  const remarkRehype = await import("remark-rehype");
-  const { unified } = await import("unified");
-  const rehypeStringify = await import("rehype-stringify");
-  const remarkDirective = await import("remark-directive");
-  const youtubeDirective = await import("./youtube-directive.mjs");
-  const slidesDirective = await import("./google-slides.mjs");
-  const rehypeRaw = await import("rehype-raw");
+import rehypeHighlight from "rehype-highlight";
+import rehypeKatex from "rehype-katex";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
+import rehypeStringify from "rehype-stringify";
+import remarkDirective from "remark-directive";
+import youtubeDirective from "./youtube-directive.js";
+import slidesDirective from "./google-slides.js";
+import rehypeRaw from "rehype-raw";
 
+async function createProcessor() {
   // for dynamic imports we have to call .default
   return unified()
-    .use(remarkParse.default)
-    .use(remarkDirective.default)
-    .use(youtubeDirective.default)
-    .use(slidesDirective.default)
-    .use(remarkMath.default)
-    .use(remarkGfm.default)
-    .use(remarkRehype.default, { allowDangerousHtml: true })
-    .use(rehypeRaw.default)
-    .use(rehypeKatex.default)
-    .use(rehypeHighlight.default)
-    .use(rehypeStringify.default);
+    .use(remarkParse)
+    .use(remarkDirective)
+    .use(youtubeDirective)
+    .use(slidesDirective)
+    .use(remarkMath)
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeKatex)
+    .use(rehypeHighlight)
+    .use(rehypeStringify);
 }
 
-function eleventyRemark() {
+export function eleventyRemark() {
   return {
     render: async (str, data) => {
       const p = await createProcessor();
@@ -36,5 +36,3 @@ function eleventyRemark() {
     },
   };
 }
-
-module.exports = { eleventyRemark };

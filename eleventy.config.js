@@ -1,7 +1,8 @@
-const { DateTime } = require("luxon");
-const { eleventyRemark } = require("./_plugins/markdown");
+import { DateTime } from "luxon";
+import { eleventyRemark } from "./_plugins/markdown.js";
 
-module.exports = function (eleventyConfig) {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("styles");
 
@@ -29,17 +30,17 @@ module.exports = function (eleventyConfig) {
     }
     return array.slice(0, n);
   });
+}
 
-  return {
-    templateFormats: ["md", "njk", "html"],
-    markdownTemplateEngine: false,
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-    dir: {
-      input: ".",
-      includes: "_includes",
-      output: "_site",
-      data: "_data",
-    },
-  };
+export const config = {
+  templateFormats: ["md", "njk", "html"],
+  markdownTemplateEngine: false,
+  htmlTemplateEngine: "njk",
+  dataTemplateEngine: "njk",
+  dir: {
+    input: ".",
+    includes: "_includes",
+    output: "_site",
+    data: "_data",
+  },
 };
